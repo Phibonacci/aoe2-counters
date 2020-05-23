@@ -1,0 +1,265 @@
+{
+    "units": {
+        "name": "Age of Empire 2: Definitive Edition",
+        "img": "assets/icons/logo/title.png",
+        "children": [
+            {
+                "name": "Barracks",
+                "img": "assets/icons/building/002_barracks_1.png",
+                "children": [
+                    {
+                        "name": "Militia Line",
+                        "description": "",
+                        "link": "https://ageofempires.fandom.com/wiki/Militia_(Age_of_Empires_II)",
+                        "img": "assets/icons/unit/Barracks/Champion.jpg",
+                        "size": 40000
+                    },
+                    {
+                        "name": "Spearmen Line",
+                        "description": "",
+                        "link": "https://ageofempires.fandom.com/wiki/Spearman_(Age_of_Empires_II)",
+                        "img": "assets/icons/unit/Barracks/Pikeman.jpg",
+                        "size": 40000
+                    },
+                    {
+                        "name": "Eagle Line",
+                        "description": "",
+                        "link": "https://ageofempires.fandom.com/wiki/Eagle_Warrior",
+                        "img": "assets/icons/unit/Barracks/Eagle Scout.jpg",
+                        "size": 40000
+                    }
+                ]
+            },
+            {
+                "name": "Archery Range",
+                "img": "assets/icons/building/000_archery_range_1.png",
+                "children": [
+                    {
+                        "name": "Archer Line",
+                        "description": "",
+                        "link": "https://ageofempires.fandom.com/wiki/Archer_(Age_of_Empires_II)",
+                        "img": "assets/icons/unit/Archery Range/Archer.jpg",
+                        "size": 40000
+                    },
+                    {
+                        "name": "Skirmisher Line",
+                        "description": "",
+                        "link": "https://ageofempires.fandom.com/wiki/Skirmisher_(Age_of_Empires_II)",
+                        "img": "assets/icons/unit/Archery Range/Skirmisher.jpg",
+                        "size": 40000
+                    },
+                    {
+                        "name": "Cavalry Archer Line",
+                        "description": "",
+                        "link": "https://ageofempires.fandom.com/wiki/Cavalry_Archer_(Age_of_Empires_II)",
+                        "img": "assets/icons/unit/Archery Range/Cavalry Archer.jpg",
+                        "size": 40000
+                    },
+                    {
+                        "name": "Hand Cannoneer",
+                        "description": "",
+                        "link": "https://ageofempires.fandom.com/wiki/Hand_Cannoneer",
+                        "img": "assets/icons/unit/Archery Range/Hand Cannoneer.jpg",
+                        "size": 40000
+                    }
+                ]
+            },
+            {
+                "name": "Stable",
+                "img": "assets/icons/building/023_stable_1.png",
+                "children": [
+                    {
+                        "name": "Scout Line",
+                        "description": "",
+                        "link": "https://ageofempires.fandom.com/wiki/Scout_Cavalry_(Age_of_Empires_II)",
+                        "img": "assets/icons/unit/Stable/Scout Cavalry.jpg",
+                        "size": 40000
+                    },
+                    {
+                        "name": "Knight Line",
+                        "description": "",
+                        "link": "https://ageofempires.fandom.com/wiki/Knight",
+                        "img": "assets/icons/unit/Stable/Knight.jpg",
+                        "size": 40000
+                    },
+                    {
+                        "name": "Camel Line",
+                        "description": "",
+                        "link": "https://ageofempires.fandom.com/wiki/Camel_Rider_(Age_of_Empires_II)",
+                        "img": "assets/icons/unit/Stable/Camel Rider.jpg",
+                        "size": 40000
+                    }
+                ]
+            },
+            {
+                "name": "Siege Workshop",
+                "img": "assets/icons/building/022_siege_workshop_2.png",
+                "children": [
+                    {
+                        "name": "Battering Ram Line",
+                        "description": "",
+                        "link": "https://ageofempires.fandom.com/wiki/Battering_Ram",
+                        "img": "assets/icons/unit/Siege/Battering Ram.jpg",
+                        "size": 40000
+                    },
+                    {
+                        "name": "Mangonel Line",
+                        "description": "",
+                        "link": "https://ageofempires.fandom.com/wiki/Mangonel",
+                        "img": "assets/icons/unit/Siege/Mangonel.jpg",
+                        "size": 40000
+                    },
+                    {
+                        "name": "Scorpions Line",
+                        "description": "",
+                        "link": "https://ageofempires.fandom.com/wiki/Mangonel",
+                        "img": "assets/icons/unit/Siege/Scorpion.jpg",
+                        "size": 40000
+                    },
+                    {
+                        "name": "Bombard Cannon",
+                        "description": "",
+                        "link": "https://ageofempires.fandom.com/wiki/Bombard_Cannon",
+                        "img": "assets/icons/unit/Siege/Bombard Cannon.jpg",
+                        "size": 40000
+                    },
+                    {
+                        "name": "Siege Tower",
+                        "description": "",
+                        "link": "https://ageofempires.fandom.com/wiki/Siege_Tower_(Age_of_Empires_II)",
+                        "img": "assets/icons/unit/Siege/Siege Tower.jpg",
+                        "size": 40000
+                    }
+                ]
+            }
+        ]
+    },
+    "counters": {
+        "Militia Line": [
+            "Archer Line",
+            "Hand Connoneers",
+            "Scorpions Line"
+        ],
+        "Spearmen Line": [
+            "Militia Line",
+            "Archer Line",
+            "Hand Connoneers",
+            "Scorpions Line",
+            "Skirmisher Line"
+        ],
+        "Eagle Line": [
+            "Militia Line",
+            "Hand Connoneers"
+        ],
+        "Archer Line": [
+            "Skirmisher Line",
+            "Scout Line",
+            "Scorpions Line",
+            "Magonel Line",
+            "Eagle Line",
+            "Bombard Cannon"
+        ],
+        "Skirmisher Line": [
+            "Militia Line",
+            "Scout Line"
+        ],
+        "Cavalry Archer Line": [
+            "Skirmisher Line",
+            "Knight Line",
+            "Camel Line",
+            "Scorpions Line",
+            "Magonel Line",
+            "Eagle Line"
+        ],
+        "Hand Cannoneer": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "Scout Line": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "Knight Line": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "Camel Line": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "Battering Ram Line": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "Mangonel Line": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "Scorpions Line": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "Bombard Cannon": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "Siege Tower": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    }
+}

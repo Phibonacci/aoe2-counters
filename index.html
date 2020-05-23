@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>AoE2 Counters | Force layout with images</title>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="main.mjs" type="module"></script>
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600);
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            font-family: "Source Code Pro", Consolas, monaco, monospace;
+            line-height: 160%;
+            font-size: 16px;
+            margin: 0;
+            height: 100%;
+        }
+
+        path.link {
+            fill: none;
+            stroke-width: 2px;
+        }
+
+        .node:not(:hover) .nodetext {
+            display: none;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 10px 0;
+            text-transform: uppercase;
+            font-weight: normal;
+        }
+
+        h2,
+        h3 {
+            font-size: 18px;
+            margin: 5px 0;
+            font-weight: normal;
+        }
+
+        header {
+            padding: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        a:link {
+            color: rgb(81, 158, 202);
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: rgb(81, 158, 202);
+        }
+
+        a:hover {
+            color: rgb(87, 121, 1);
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(81, 158, 202);
+        }
+
+        img {
+            border-radius: 15%;
+        }
+
+        .row {
+            display: flex;
+            height: 100%;
+        }
+
+        .description {
+            padding: 10px;
+            padding-top: 20px;
+            flex: 20%;
+            height: 100%;
+            background-color: lightblue;
+        }
+
+        .graph {
+            flex: 80%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="row">
+        <div class="description">
+            <h1>AoE2 counters</h1>
+            <h2></h2>
+            <h3></h3>
+        </div>
+        <!-- container for force layout visualisation  -->
+        <div id="vis" class="graph">
+        </div>
+    </div>
+</body>
