@@ -9,15 +9,27 @@
     <style>
         @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600);
 
+        @font-face {
+            font-family: "Castelar";
+            src: url("assets/fonts/CASTELAR.ttf") format("truetype");
+        }
+
         html {
             height: 100%;
         }
 
         body {
-            font-family: "Source Code Pro", Consolas, monaco, monospace;
+            font-family: "Castelar", "Source Code Pro", Consolas, monaco, monospace;
+            color: #ECBB7C;
             line-height: 160%;
-            font-size: 16px;
+            font-size: 18px;
             margin: 0;
+            height: 100%;
+            background-image: url('assets/background/main_screen.jpg');
+            background-repeat: no-repeat;
+            background-size: 1920px;
+            position: fixed;
+            width: 100%;
             height: 100%;
         }
 
@@ -78,31 +90,79 @@
             height: 100%;
         }
 
+        .empty-border {
+            flex: 7%;
+        }
+
+        .mask {
+            width: 20%;
+            height: 100%;
+            border: 2px solid;
+            border-style: none solid none solid;
+            border-color: #FFA800;
+            position: fixed;
+            left: 7%;
+            z-index: 10;
+            overflow: hidden;
+        }
+
+        .blured-image {
+            left: -35%;
+            padding-left: 35%;
+            /* Black w/opacity/see-through */
+            width: 100%;
+            height: 100%;
+            display: block;
+            z-index: 2;
+            position: absolute;
+            filter: blur(4px);
+            -webkit-filter: blur(4px);
+            background-image: url('assets/background/main_screen.jpg');
+            background-repeat: no-repeat;
+            background-size: 1920px;
+        }
+
+        .teinted-image {
+            background-color: rgba(0, 0, 0, 0.4);
+            width: 100%;
+            height: 100%;
+        }
+
         .description {
             padding: 10px;
             padding-top: 20px;
-            flex: 20%;
+            position: fixed;
+            left: 7%;
+            width: 20%;
             height: 100%;
-            background-color: lightblue;
+            position: fixed;
+            z-index: 10;
         }
 
         .graph {
-            flex: 80%;
+            left: 27%;
+            width: 73%;
             height: 100%;
+            position: fixed;
+            z-index: 10;
         }
     </style>
 </head>
 
 
 <body>
-    <div class="row">
-        <div class="description">
-            <h1>AoE2 counters</h1>
-            <h2></h2>
-            <h3></h3>
+    <div class="empty-border"></div>
+    <div class="mask">
+        <div class="blured-image">
+            <div class="teinted-image"></div>
         </div>
-        <!-- container for force layout visualisation  -->
-        <div id="vis" class="graph">
-        </div>
+    </div>
+    <div class="description">
+        <h1>AoE2 counters</h1>
+        <h2></h2>
+        <h3></h3>
+    </div>
+    <!-- container for force layout visualisation  -->
+    <div id="vis" class="graph">
     </div>
 </body>

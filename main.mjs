@@ -1,5 +1,5 @@
 // some colour variables
-const tcBlack = "#130C0E";
+const tcBlack = "#ecfC0E";
 const imageSize = 40;
 const imageFocusSize = 50;
 
@@ -11,6 +11,8 @@ const x_browser = 0;
 const y_browser = 25;
 let units;
 let counters;
+let hideBuildings = false;
+let selected = null;
 
 const force = d3.layout.force();
 
@@ -22,7 +24,7 @@ d3.json("data.json", function (json) {
   units.fixed = true;
   units.x = w / 2;
   units.y = h / 2;
-
+  counters = json.counters;
 
   // Build the path
   const defs = vis.insert("svg:defs")
@@ -40,8 +42,8 @@ d3.json("data.json", function (json) {
  *   
  */
 function update() {
-  const nodes = flatten(units),
-    links = d3.layout.tree().links(nodes);
+  const [nodes, allNodes] = flatten(units);
+  const links = d3.layout.tree().links(nodes);
 
   // Restart the force layout.
   force.nodes(nodes)
@@ -56,12 +58,15 @@ function update() {
     .start();
 
   let path = vis.selectAll("path.link")
-    .data(links, function (d) { return d.target.id; });
+    .data(links, function (d) {
+      return d.target.id;
+    }).attr("class", "link")
+    .style("stroke", (selected ? "#f22" : "#eee"));
 
   path.enter().insert("svg:path")
     .attr("class", "link")
     // .attr("marker-end", "url(#end)")
-    .style("stroke", "#eee");
+    .style("stroke", (selected ? "#f22" : "#eee"));
 
 
   // Exit any old paths.
@@ -78,13 +83,32 @@ function update() {
   const nodeEnter = node.enter().append("svg:g")
     .attr("class", "node")
     .attr("transform", function (d) { return "translate(" + d.x + "," + d.y + ")"; })
-    .on("click", click)
+    .on("click", function click(d) {
+      if (d.type == "building") {
+        if (d.children) {
+          d.children = null;
+        } else {
+          console.log(d.units)
+          d.children = d.units;
+        }
+      } else {
+        if (d.children) {
+          selected = null;
+          hideBuildings = false;
+          d.children = null;
+        } else {
+          if (selected) {
+            selected.children = null;
+          }
+          selected = d;
+          hideBuildings = true;
+          d.children = d.counters;
+        }
+        console.log(d.counters);
+      }
+      update();
+    })
     .call(force.drag);
-
-  // Append a circle
-  const cirle = nodeEnter.append("svg:circle")
-    .attr("r", function (d) { return Math.sqrt(d.size) / 10 || 4.5; })
-    .style("fill", "#eee");
 
   const foreignObject = nodeEnter.append('foreignObject')
     .attr("x", function (d) { return -imageSize / 2; })
@@ -128,7 +152,7 @@ function update() {
         .attr("width", imageSize);
     });
 
-  // Append hero name on roll over next to the node as well
+  // Append name on roll over next to the node as well
   nodeEnter.append("text")
     .attr("class", "nodetext")
     .attr("x", x_browser)
@@ -146,10 +170,8 @@ function update() {
   node = vis.selectAll("g.node");
 
   function tick() {
-
-
     path.attr("d", function (d) {
-
+      //console.log(d.source.name)
       const dx = d.target.x - d.source.x,
         dy = d.target.y - d.source.y,
         dr = Math.sqrt(dx * dx + dy * dy);
@@ -176,36 +198,41 @@ function nodeTransform(d) {
 }
 
 /**
- * Toggle children on click.
- */
-function click(d) {
-  if (d.children) {
-    d._children = d.children;
-    d.children = null;
-  } else {
-    d.children = d._children;
-    d._children = null;
-  }
-
-  update();
-}
-
-
-/**
  * Returns a list of all nodes under the units.
  */
 function flatten(units) {
-  const nodes = [];
+  let nodes = [];
+  const nameToNode = {};
+  const allNodes = [];
   let i = 0;
 
-  function recurse(node) {
-    if (node.children)
-      node.children.forEach(recurse);
-    if (!node.id)
+  function listNodes(node) {
+    if (node.children) {
+      node.units = node.children;
+      node.children.forEach(listNodes);
+    }
+    if (!node.id) {
       node.id = ++i;
-    nodes.push(node);
+    }
+    if (!(node.type == "building") || !hideBuildings) {
+      nodes.push(node);
+    }
+    allNodes.push(node);
+    nameToNode[node.name] = node;
   }
-
-  recurse(units);
-  return nodes;
+  listNodes(units);
+  for (let node of nodes) {
+    node.counters = [];
+    if (!(node.name in counters)) {
+      continue;
+    }
+    for (let counterName of counters[node.name]) {
+      const counter = nameToNode[counterName];
+      node.counters.push(counter);
+    }
+  }
+  if (selected) {
+    nodes = [selected].concat(selected.counters);
+  }
+  return [nodes, allNodes];
 } 

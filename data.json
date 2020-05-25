@@ -1,10 +1,12 @@
 {
     "units": {
         "name": "Age of Empire 2: Definitive Edition",
+        "type": "building",
         "img": "assets/icons/logo/title.png",
         "children": [
             {
                 "name": "Barracks",
+                "type": "building",
                 "img": "assets/icons/building/002_barracks_1.png",
                 "children": [
                     {
@@ -32,6 +34,7 @@
             },
             {
                 "name": "Archery Range",
+                "type": "building",
                 "img": "assets/icons/building/000_archery_range_1.png",
                 "children": [
                     {
@@ -66,6 +69,7 @@
             },
             {
                 "name": "Stable",
+                "type": "building",
                 "img": "assets/icons/building/023_stable_1.png",
                 "children": [
                     {
@@ -93,6 +97,7 @@
             },
             {
                 "name": "Siege Workshop",
+                "type": "building",
                 "img": "assets/icons/building/022_siege_workshop_2.png",
                 "children": [
                     {
@@ -137,25 +142,25 @@
     "counters": {
         "Militia Line": [
             "Archer Line",
-            "Hand Connoneers",
+            "Hand Cannoneer",
             "Scorpions Line"
         ],
         "Spearmen Line": [
             "Militia Line",
             "Archer Line",
-            "Hand Connoneers",
+            "Hand Cannoneer",
             "Scorpions Line",
             "Skirmisher Line"
         ],
         "Eagle Line": [
             "Militia Line",
-            "Hand Connoneers"
+            "Hand Cannoneer"
         ],
         "Archer Line": [
             "Skirmisher Line",
             "Scout Line",
             "Scorpions Line",
-            "Magonel Line",
+            "Mangonel Line",
             "Eagle Line",
             "Bombard Cannon"
         ],
@@ -168,7 +173,7 @@
             "Knight Line",
             "Camel Line",
             "Scorpions Line",
-            "Magonel Line",
+            "Mangonel Line",
             "Eagle Line"
         ],
         "Hand Cannoneer": [
