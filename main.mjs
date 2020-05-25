@@ -1,5 +1,5 @@
 // some colour variables
-const tcBlack = "#ecfC0E";
+const tcBlack = "#FFA800";
 const imageSize = 40;
 const imageFocusSize = 50;
 
