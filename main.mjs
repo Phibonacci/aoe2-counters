@@ -4,8 +4,8 @@ const imageSize = 40;
 const imageFocusSize = 50;
 
 // rest of vars
-const w = document.getElementById("vis").offsetWidth;
-const h = document.getElementById("vis").offsetHeight;
+let w = document.getElementById("vis").offsetWidth;
+let h = document.getElementById("vis").offsetHeight;
 const maxNodeSize = 50;
 const x_browser = 0;
 const y_browser = 25;
@@ -22,8 +22,6 @@ d3.json("data.json", function (json) {
 
   units = json.units;
   units.fixed = true;
-  units.x = w / 2;
-  units.y = h / 2;
   counters = json.counters;
 
   // Build the path
@@ -38,6 +36,11 @@ d3.json("data.json", function (json) {
 });
 
 function update() {
+  window.onresize = tick;
+  w = document.getElementById("vis").offsetWidth;
+  h = document.getElementById("vis").offsetHeight;
+  units.x = w / 2;
+  units.y = h / 2;
   const [nodes, allNodes] = flatten(units);
   const links = d3.layout.tree().links(nodes);
 
@@ -162,6 +165,10 @@ function update() {
   node = vis.selectAll("g.node");
 
   function tick() {
+    w = document.getElementById("vis").offsetWidth;
+    h = document.getElementById("vis").offsetHeight;
+    units.x = w / 2;
+    units.y = h / 2;
     path.attr("d", function (d) {
       const dx = d.target.x - d.source.x;
       const dy = d.target.y - d.source.y;
@@ -174,6 +181,7 @@ function update() {
         + d.target.y;
     });
     node.attr("transform", nodeTransform);
+    update();
   }
 }
 
