@@ -1,7 +1,7 @@
 // some colour variables
 const tcBlack = "#FFA800";
-const imageSize = 40;
-const imageFocusSize = 50;
+let imageSize = 40;
+let imageFocusSize = 50;
 
 // rest of vars
 let w = document.getElementById("vis").offsetWidth;
@@ -36,11 +36,13 @@ d3.json("data.json", function (json) {
 });
 
 function update() {
-  window.onresize = tick;
+  window.onresize = update;
   w = document.getElementById("vis").offsetWidth;
   h = document.getElementById("vis").offsetHeight;
   units.x = w / 2;
   units.y = h / 2;
+  imageSize = w * h / 17000;
+  imageFocusSize = imageSize * 1.5;
   const [nodes, allNodes] = flatten(units);
   const links = d3.layout.tree().links(nodes);
 
@@ -48,7 +50,7 @@ function update() {
   force.nodes(nodes)
     .links(links)
     .gravity(1)
-    .charge(-14000)
+    .charge(-500 * imageSize)
     .linkDistance((selected ? 100 : 20))
     .friction(0.2)
     .linkStrength(function (l, i) { return 1; })
@@ -81,6 +83,7 @@ function update() {
     .attr("class", "node")
     .attr("transform", function (d) { return "translate(" + d.x + "," + d.y + ")"; })
     .on("click", function click(d) {
+      console.log("clique");
       if (d.type == "building") {
         if (d.children) {
           d.children = null;
@@ -181,7 +184,6 @@ function update() {
         + d.target.y;
     });
     node.attr("transform", nodeTransform);
-    update();
   }
 }
 
