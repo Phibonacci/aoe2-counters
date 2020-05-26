@@ -8,7 +8,7 @@ let w = document.getElementById("vis").offsetWidth;
 let h = document.getElementById("vis").offsetHeight;
 const maxNodeSize = 50;
 const x_browser = 0;
-const y_browser = 25;
+const y_browser = 35;
 let units;
 let counters;
 let hideBuildings = false;
@@ -41,7 +41,7 @@ function update() {
   h = document.getElementById("vis").offsetHeight;
   units.x = w / 2;
   units.y = h / 2;
-  imageSize = w * h / 17000;
+  imageSize = Math.exp(w / 1500) * 30;
   imageFocusSize = imageSize * 1.5;
   const [nodes, allNodes] = flatten(units);
   const links = d3.layout.tree().links(nodes);
@@ -50,9 +50,9 @@ function update() {
   force.nodes(nodes)
     .links(links)
     .gravity(1)
-    .charge(-500 * imageSize)
+    .charge(-600 * imageSize)
     .linkDistance((selected ? 100 : 20))
-    .friction(0.2)
+    .friction(0.25)
     .linkStrength(function (l, i) { return 1; })
     .size([w, h])
     .on("tick", tick)
@@ -155,7 +155,7 @@ function update() {
   nodeEnter.append("text")
     .attr("class", "nodetext")
     .attr("x", x_browser)
-    .attr("y", y_browser + 20)
+    .attr("y", y_browser + imageFocusSize / 2)
     .attr("fill", tcBlack)
     .text(function (d) { return d.name; });
 
