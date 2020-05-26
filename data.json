@@ -1,6 +1,6 @@
 {
     "units": {
-        "name": "Age of Empire 2: Definitive Edition",
+        "name": "",
         "type": "building",
         "img": "assets/icons/logo/title.png",
         "children": [
@@ -13,22 +13,19 @@
                         "name": "Militia Line",
                         "description": "",
                         "link": "https://ageofempires.fandom.com/wiki/Militia_(Age_of_Empires_II)",
-                        "img": "assets/icons/unit/Barracks/Champion.jpg",
-                        "size": 40000
+                        "img": "assets/icons/unit/Barracks/Champion.jpg"
                     },
                     {
                         "name": "Spearmen Line",
                         "description": "",
                         "link": "https://ageofempires.fandom.com/wiki/Spearman_(Age_of_Empires_II)",
-                        "img": "assets/icons/unit/Barracks/Pikeman.jpg",
-                        "size": 40000
+                        "img": "assets/icons/unit/Barracks/Pikeman.jpg"
                     },
                     {
                         "name": "Eagle Line",
                         "description": "",
                         "link": "https://ageofempires.fandom.com/wiki/Eagle_Warrior",
-                        "img": "assets/icons/unit/Barracks/Eagle Scout.jpg",
-                        "size": 40000
+                        "img": "assets/icons/unit/Barracks/Eagle Scout.jpg"
                     }
                 ]
             },
@@ -41,29 +38,25 @@
                         "name": "Archer Line",
                         "description": "",
                         "link": "https://ageofempires.fandom.com/wiki/Archer_(Age_of_Empires_II)",
-                        "img": "assets/icons/unit/Archery Range/Archer.jpg",
-                        "size": 40000
+                        "img": "assets/icons/unit/Archery Range/Archer.jpg"
                     },
                     {
                         "name": "Skirmisher Line",
                         "description": "",
                         "link": "https://ageofempires.fandom.com/wiki/Skirmisher_(Age_of_Empires_II)",
-                        "img": "assets/icons/unit/Archery Range/Skirmisher.jpg",
-                        "size": 40000
+                        "img": "assets/icons/unit/Archery Range/Skirmisher.jpg"
                     },
                     {
                         "name": "Cavalry Archer Line",
                         "description": "",
                         "link": "https://ageofempires.fandom.com/wiki/Cavalry_Archer_(Age_of_Empires_II)",
-                        "img": "assets/icons/unit/Archery Range/Cavalry Archer.jpg",
-                        "size": 40000
+                        "img": "assets/icons/unit/Archery Range/Cavalry Archer.jpg"
                     },
                     {
                         "name": "Hand Cannoneer",
                         "description": "",
                         "link": "https://ageofempires.fandom.com/wiki/Hand_Cannoneer",
-                        "img": "assets/icons/unit/Archery Range/Hand Cannoneer.jpg",
-                        "size": 40000
+                        "img": "assets/icons/unit/Archery Range/Hand Cannoneer.jpg"
                     }
                 ]
             },
@@ -76,22 +69,19 @@
                         "name": "Scout Line",
                         "description": "",
                         "link": "https://ageofempires.fandom.com/wiki/Scout_Cavalry_(Age_of_Empires_II)",
-                        "img": "assets/icons/unit/Stable/Scout Cavalry.jpg",
-                        "size": 40000
+                        "img": "assets/icons/unit/Stable/Scout Cavalry.jpg"
                     },
                     {
                         "name": "Knight Line",
                         "description": "",
                         "link": "https://ageofempires.fandom.com/wiki/Knight",
-                        "img": "assets/icons/unit/Stable/Knight.jpg",
-                        "size": 40000
+                        "img": "assets/icons/unit/Stable/Knight.jpg"
                     },
                     {
                         "name": "Camel Line",
                         "description": "",
                         "link": "https://ageofempires.fandom.com/wiki/Camel_Rider_(Age_of_Empires_II)",
-                        "img": "assets/icons/unit/Stable/Camel Rider.jpg",
-                        "size": 40000
+                        "img": "assets/icons/unit/Stable/Camel Rider.jpg"
                     }
                 ]
             },
@@ -104,36 +94,94 @@
                         "name": "Battering Ram Line",
                         "description": "",
                         "link": "https://ageofempires.fandom.com/wiki/Battering_Ram",
-                        "img": "assets/icons/unit/Siege/Battering Ram.jpg",
-                        "size": 40000
+                        "img": "assets/icons/unit/Siege/Battering Ram.jpg"
                     },
                     {
                         "name": "Mangonel Line",
                         "description": "",
                         "link": "https://ageofempires.fandom.com/wiki/Mangonel",
-                        "img": "assets/icons/unit/Siege/Mangonel.jpg",
-                        "size": 40000
+                        "img": "assets/icons/unit/Siege/Mangonel.jpg"
                     },
                     {
                         "name": "Scorpions Line",
                         "description": "",
                         "link": "https://ageofempires.fandom.com/wiki/Mangonel",
-                        "img": "assets/icons/unit/Siege/Scorpion.jpg",
-                        "size": 40000
+                        "img": "assets/icons/unit/Siege/Scorpion.jpg"
                     },
                     {
                         "name": "Bombard Cannon",
                         "description": "",
                         "link": "https://ageofempires.fandom.com/wiki/Bombard_Cannon",
-                        "img": "assets/icons/unit/Siege/Bombard Cannon.jpg",
-                        "size": 40000
+                        "img": "assets/icons/unit/Siege/Bombard Cannon.jpg"
                     },
                     {
                         "name": "Siege Tower",
                         "description": "",
                         "link": "https://ageofempires.fandom.com/wiki/Siege_Tower_(Age_of_Empires_II)",
-                        "img": "assets/icons/unit/Siege/Siege Tower.jpg",
-                        "size": 40000
+                        "img": "assets/icons/unit/Siege/Siege Tower.jpg"
+                    }
+                ]
+            },
+            {
+                "name": "Monastary",
+                "type": "building",
+                "img": "assets/icons/building/010_monastery_1.png",
+                "children": [
+                    {
+                        "name": "Monk",
+                        "description": "",
+                        "link": "https://ageofempires.fandom.com/wiki/Monk_(Age_of_Empires_II)",
+                        "img": "assets/icons/unit/Misc Other Units/Monk.jpg"
+                    }
+                ]
+            },
+            {
+                "name": "Castle",
+                "type": "building",
+                "img": "assets/icons/building/007_castle.png",
+                "children": [
+                    {
+                        "name": "Petard",
+                        "description": "",
+                        "link": "https://ageofempires.fandom.com/wiki/Petard_(Age_of_Empires_II)",
+                        "img": "assets/icons/unit/Siege/Petard.jpg"
+                    },
+                    {
+                        "name": "Trebuchet",
+                        "description": "",
+                        "link": "https://ageofempires.fandom.com/wiki/Trebuchet",
+                        "img": "assets/icons/unit/Siege/Trebuchet (packed).jpg"
+                    }
+                ]
+            },
+            {
+                "name": "Dock",
+                "type": "building",
+                "img": "assets/icons/building/013_dock_1.png",
+                "children": [
+                    {
+                        "name": "Galley Line",
+                        "description": "",
+                        "link": "",
+                        "img": "assets/icons/unit/Dock/Galley.jpg"
+                    },
+                    {
+                        "name": "Fire Line",
+                        "description": "",
+                        "link": "https://ageofempires.fandom.com/wiki/Fire_Galley_(Age_of_Empires_II)",
+                        "img": "assets/icons/unit/Dock/Fire Ship.jpg"
+                    },
+                    {
+                        "name": "Demo Raft Line",
+                        "description": "",
+                        "link": "",
+                        "img": "assets/icons/unit/Dock/Demolition Raft.jpg"
+                    },
+                    {
+                        "name": "Cannon Galleon Line",
+                        "description": "",
+                        "link": "",
+                        "img": "assets/icons/unit/Dock/Cannon Galleon.jpg"
                     }
                 ]
             }
