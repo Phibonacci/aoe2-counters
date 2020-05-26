@@ -1,14 +1,14 @@
 // some colour variables
 const tcBlack = "#FFA800";
-let imageSize = 40;
-let imageFocusSize = 50;
+let imageSize;
+let imageFocusSize;
 
 // rest of vars
 let w = document.getElementById("vis").offsetWidth;
 let h = document.getElementById("vis").offsetHeight;
 const maxNodeSize = 50;
 const x_browser = 0;
-const y_browser = 35;
+const y_browser = 25;
 let units;
 let counters;
 let hideBuildings = false;
@@ -42,7 +42,7 @@ function update() {
   units.x = w / 2;
   units.y = h / 2;
   imageSize = Math.exp(w / 1500) * 30;
-  imageFocusSize = imageSize * 1.5;
+  imageFocusSize = imageSize * 1.4;
   const [nodes, allNodes] = flatten(units);
   const links = d3.layout.tree().links(nodes);
 
@@ -110,8 +110,8 @@ function update() {
   //.call(force.drag);
 
   const foreignObject = nodeEnter.append('foreignObject')
-    .attr("x", function (d) { return -imageSize / 2; })
-    .attr("y", function (d) { return -imageSize / 2; })
+    .attr("x", function (d) { return -imageFocusSize / 2; })
+    .attr("y", function (d) { return -imageFocusSize / 2; })
     .attr("width", imageFocusSize)
     .attr("height", imageFocusSize);
 
@@ -119,8 +119,7 @@ function update() {
   const images = foreignObject.append('xhtml:div')
     .append("img")
     .attr("src", function (d) { return d.img; })
-    .attr("x", function (d) { return -imageSize / 2; })
-    .attr("y", function (d) { return -imageSize / 2; })
+    .attr("style", function (d) { return "position: absolute;top: " + imageSize / 4 + "px;" + "left:" + imageSize / 4 + "px;"; })
     .attr("height", imageSize)
     .attr("width", imageSize);
 
@@ -135,8 +134,7 @@ function update() {
       // select element in current context
       d3.select(this)
         .transition()
-        .attr("x", function (d) { return -imageFocusSize / 2; })
-        .attr("y", function (d) { return -imageFocusSize / 2; })
+        .attr("style", function (d) { return "position: absolute;top:" + 0 + "px;" + "left:" + 0 + "px;"; })
         .attr("height", imageFocusSize)
         .attr("width", imageFocusSize);
     })
@@ -144,8 +142,7 @@ function update() {
     .on('mouseleave', function () {
       d3.select(this)
         .transition()
-        .attr("x", function (d) { return -imageSize / 2; })
-        .attr("y", function (d) { return -imageSize / 2; })
+        .attr("style", function (d) { return "position: absolute;top:" + imageSize / 4 + "px;" + "left:" + imageSize / 4 + "px;"; })
         .attr("height", imageSize)
         .attr("width", imageSize);
     });
