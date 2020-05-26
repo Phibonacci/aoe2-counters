@@ -37,10 +37,6 @@ d3.json("data.json", function (json) {
   update();
 });
 
-
-/**
- *   
- */
 function update() {
   const [nodes, allNodes] = flatten(units);
   const links = d3.layout.tree().links(nodes);
@@ -48,10 +44,10 @@ function update() {
   // Restart the force layout.
   force.nodes(nodes)
     .links(links)
-    .gravity(0.05)
-    .charge(-1500)
-    .linkDistance(100)
-    .friction(0.5)
+    .gravity(1)
+    .charge(-14000)
+    .linkDistance((selected ? 100 : 20))
+    .friction(0.2)
     .linkStrength(function (l, i) { return 1; })
     .size([w, h])
     .on("tick", tick)
@@ -65,19 +61,17 @@ function update() {
 
   path.enter().insert("svg:path")
     .attr("class", "link")
-    // .attr("marker-end", "url(#end)")
     .style("stroke", (selected ? "#f22" : "#eee"));
-
 
   // Exit any old paths.
   path.exit().remove();
 
-
+  // Remove all node so they are all redrawn on top of new links
+  vis.selectAll("g.node").remove();
 
   // Update the nodes…
   let node = vis.selectAll("g.node")
     .data(nodes, function (d) { return d.id; });
-
 
   // Enter any new nodes.
   const nodeEnter = node.enter().append("svg:g")
@@ -107,8 +101,8 @@ function update() {
         console.log(d.counters);
       }
       update();
-    })
-    .call(force.drag);
+    });
+  //.call(force.drag);
 
   const foreignObject = nodeEnter.append('foreignObject')
     .attr("x", function (d) { return -imageSize / 2; })
@@ -132,7 +126,6 @@ function update() {
       d3.select("h2").html(d.name);
       d3.select("h3").html("<a href='" + d.link + "' >" + "Wiki link" + "</a>");
     })
-
     .on('mouseenter', function () {
       // select element in current context
       d3.select(this)
@@ -164,17 +157,15 @@ function update() {
   // Exit any old nodes.
   node.exit().remove();
 
-
   // Re-select for update.
   path = vis.selectAll("path.link");
   node = vis.selectAll("g.node");
 
   function tick() {
     path.attr("d", function (d) {
-      //console.log(d.source.name)
-      const dx = d.target.x - d.source.x,
-        dy = d.target.y - d.source.y,
-        dr = Math.sqrt(dx * dx + dy * dy);
+      const dx = d.target.x - d.source.x;
+      const dy = d.target.y - d.source.y;
+      const dr = Math.sqrt(dx * dx + dy * dy);
       return "M" + d.source.x + ","
         + d.source.y
         + "A" + dr + ","
