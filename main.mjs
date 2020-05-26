@@ -2,6 +2,9 @@
 const tcBlack = "#FFA800";
 let imageSize;
 let imageFocusSize;
+let init = true;
+let nameToNode = {};
+let allNodes = [];
 
 // rest of vars
 let w = document.getElementById("vis").offsetWidth;
@@ -23,6 +26,28 @@ d3.json("data.json", function (json) {
   units = json.units;
   units.fixed = true;
   counters = json.counters;
+
+  function getNameToNode(node) {
+    node.x = w / 2 + 10 * Math.random();
+    node.y = h / 2 + 10 * Math.random();
+    if (node.children) {
+      node.children.forEach(getNameToNode);
+    }
+    nameToNode[node.name] = node;
+    node.init = false;
+    allNodes.push(node);
+  }
+  getNameToNode(units);
+  for (let node of allNodes) {
+    node.counters = [];
+    if (!(node.name in counters)) {
+      continue;
+    }
+    for (let counterName of counters[node.name]) {
+      const counter = nameToNode[counterName];
+      node.counters.push(counter);
+    }
+  }
 
   // Build the path
   const defs = vis.insert("svg:defs")
@@ -50,9 +75,9 @@ function update() {
   force.nodes(nodes)
     .links(links)
     .gravity(1)
-    .charge(-6 * imageSize * imageSize)
-    .friction(0.25)
-    .linkStrength(function (l, i) { return 1; })
+    .charge(-35 * imageSize * imageSize)
+    .friction(0.1)
+    .linkStrength(function (l, i) { return 5; })
     .size([w, h])
     .on("tick", tick)
     .start();
@@ -82,12 +107,10 @@ function update() {
     .attr("class", "node")
     .attr("transform", function (d) { return "translate(" + d.x + "," + d.y + ")"; })
     .on("click", function click(d) {
-      console.log("clique");
-      if (d.type == "building") {
+      if (d.type === "building") {
         if (d.children) {
           d.children = null;
         } else {
-          console.log(d.units)
           d.children = d.units;
         }
       } else {
@@ -103,7 +126,6 @@ function update() {
           hideBuildings = true;
           d.children = d.counters;
         }
-        console.log(d.counters);
       }
       update();
     });
@@ -189,8 +211,6 @@ function update() {
  * http://bl.ocks.org/mbostock/1129492
  */
 function nodeTransform(d) {
-  d.x = Math.max(maxNodeSize, Math.min(w - (d.imgwidth / 2 || 16), d.x));
-  d.y = Math.max(maxNodeSize, Math.min(h - (d.imgheight / 2 || 16), d.y));
   return "translate(" + d.x + "," + d.y + ")";
 }
 
@@ -199,8 +219,6 @@ function nodeTransform(d) {
  */
 function flatten(units) {
   let nodes = [];
-  const nameToNode = {};
-  const allNodes = [];
   let i = 0;
 
   function listNodes(node) {
@@ -211,24 +229,19 @@ function flatten(units) {
     if (!node.id) {
       node.id = ++i;
     }
-    if (!(node.type == "building") || !hideBuildings) {
+    if (!(node.type === "building") || !hideBuildings) {
       nodes.push(node);
     }
-    allNodes.push(node);
-    nameToNode[node.name] = node;
   }
   listNodes(units);
-  for (let node of nodes) {
-    node.counters = [];
-    if (!(node.name in counters)) {
-      continue;
+  if (init) {
+    init = false;
+    nodes = [units];
+    for (let node of units.children) {
+      node.children = null;
+      nodes.push(node);
     }
-    for (let counterName of counters[node.name]) {
-      const counter = nameToNode[counterName];
-      node.counters.push(counter);
-    }
-  }
-  if (selected) {
+  } else if (selected) {
     nodes = [selected].concat(selected.counters);
   }
   return [nodes, allNodes];
