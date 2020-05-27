@@ -251,7 +251,6 @@
             "Knight Line",
             "Skirmisher Line",
             "Eagle Line",
-            "Mangonel Line",
             "Scorpions Line"
         ],
         "Knight Line": [
@@ -331,7 +330,6 @@
         "Fire Line": [
             "Bombard Cannon",
             "Mangonel Line",
-            "Galley Line",
             "Demo Raft Line"
         ],
         "Demo Raft Line": [
