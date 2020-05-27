@@ -115,7 +115,7 @@
                     {
                         "name": "Scorpions Line",
                         "description": "",
-                        "link": "https://ageofempires.fandom.com/wiki/Mangonel",
+                        "link": "https://ageofempires.fandom.com/wiki/Scorpion",
                         "img": "assets/icons/unit/Siege/Scorpion.jpg"
                     },
                     {
@@ -175,7 +175,7 @@
                     {
                         "name": "Galley Line",
                         "description": "",
-                        "link": "",
+                        "link": "https://ageofempires.fandom.com/wiki/Galley_(Age_of_Empires_II)",
                         "img": "assets/icons/unit/Dock/Galley.jpg"
                     },
                     {
@@ -187,13 +187,13 @@
                     {
                         "name": "Demo Raft Line",
                         "description": "",
-                        "link": "",
+                        "link": "https://ageofempires.fandom.com/wiki/Demolition_Raft",
                         "img": "assets/icons/unit/Dock/Demolition Raft.jpg"
                     },
                     {
                         "name": "Cannon Galleon Line",
                         "description": "",
-                        "link": "",
+                        "link": "https://ageofempires.fandom.com/wiki/Cannon_Galleon",
                         "img": "assets/icons/unit/Dock/Cannon Galleon.jpg"
                     }
                 ]
@@ -204,6 +204,7 @@
         "Militia Line": [
             "Archer Line",
             "Hand Cannoneer",
+            "Battle Elephant",
             "Scorpions Line"
         ],
         "Spearmen Line": [
@@ -215,7 +216,8 @@
         ],
         "Eagle Line": [
             "Militia Line",
-            "Hand Cannoneer"
+            "Hand Cannoneer",
+            "Battle Elephant"
         ],
         "Archer Line": [
             "Skirmisher Line",
@@ -228,30 +230,34 @@
         ],
         "Skirmisher Line": [
             "Militia Line",
-            "Scout Cavalry Line"
+            "Eagle Line",
+            "Scout Cavalry Line",
+            "Knight Line",
+            "Camel Line",
+            "Battle Elephant",
+            "Scorpions Line",
+            "Mangonel Line"
         ],
         "Cavalry Archer Line": [
             "Skirmisher Line",
-            "Knight Line",
             "Camel Line",
             "Scorpions Line",
             "Mangonel Line",
-            "Eagle Line"
+            "Eagle Line",
+            "Battering Ram Line"
         ],
         "Hand Cannoneer": [
-            "Archer Line",
             "Skirmisher Line",
             "Scorpions Line",
-            "Mangonel Line"
+            "Mangonel Line",
+            "Knight Line"
         ],
         "Scout Cavalry Line": [
             "Militia Line",
             "Spearmen Line",
             "Camel Line",
             "Knight Line",
-            "Skirmisher Line",
-            "Eagle Line",
-            "Scorpions Line"
+            "Eagle Line"
         ],
         "Knight Line": [
             "Spearmen Line",
@@ -272,8 +278,10 @@
             "Scorpions Line"
         ],
         "Battering Ram Line": [
+            "Spearmen Line",
             "Militia Line",
             "Eagle Line",
+            "Scout Cavalry Line",
             "Knight Line",
             "Camel Line",
             "Petard",
@@ -287,24 +295,30 @@
             "Eagle Line"
         ],
         "Scorpions Line": [
+            "Scout Cavalry Line",
             "Knight Line",
             "Camel Line",
-            "Petard",
             "Bombard Cannon",
             "Eagle Line",
             "Mangonel Line"
         ],
         "Bombard Cannon": [
+            "Militia Line",
+            "Spearmen Line",
+            "Eagle Line",
+            "Scout Cavalry Line",
             "Knight Line",
             "Camel Line",
-            "Petard",
-            "Eagle Line"
+            "Petard"
         ],
         "Siege Tower": [
+            "Militia Line",
+            "Spearmen Line",
+            "Eagle Line",
+            "Scout Cavalry Line",
             "Knight Line",
             "Camel Line",
-            "Petard",
-            "Eagle Line"
+            "Petard"
         ],
         "Monk": [
             "Scout Cavalry Line",
@@ -317,15 +331,17 @@
         ],
         "Trebuchet": [
             "Eagle Line",
+            "Scout Cavalry Line",
             "Knight Line",
             "Camel Line",
-            "Battering Ram Line",
             "Bombard Cannon",
-            "Petard"
+            "Petard",
+            "Mangonel Line"
         ],
         "Galley Line": [
-            "Petard",
-            "Fire Line"
+            "Fire Line",
+            "Bombard Cannon",
+            "Mangonel Line"
         ],
         "Fire Line": [
             "Bombard Cannon",
@@ -333,12 +349,18 @@
             "Demo Raft Line"
         ],
         "Demo Raft Line": [
-            "Galley Line"
+            "Archer Line"
         ],
         "Cannon Galleon Line": [
             "Bombard Cannon",
             "Monk",
-            "Fire Line"
+            "Fire Line",
+            "Galley Line",
+            "Demo Raft Line"
+        ],
+        "Transport Ship": [
+            "Fire Line",
+            "Demo Raft Line"
         ]
     }
 }
