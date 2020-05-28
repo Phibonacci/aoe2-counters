@@ -150,7 +150,7 @@ function update() {
     // Append hero text
     .on('click', function (d) {
       d3.select("h2").html(d.name);
-      d3.select("h3").html("<a href='" + d.link + "' >" + "Wiki link" + "</a>");
+      d3.select("h3").html("<a href='" + d.link + "' target='_blank' >" + "Wiki link" + "</a>");
     })
     .on('mouseenter', function () {
       // select element in current context
