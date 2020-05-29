@@ -66,10 +66,8 @@ d3.json("data.json", function (json) {
   const radio = Array.from(document.getElementById("filter-list").querySelectorAll('input'));
   const selectedFilter = radio.length && radio.find(r => r.checked).value;
   d3.select("#filter-selected").html("Selected: " + selectedFilter);
-  var value = radio.length && radio.find(r => r.checked).value;
   document.getElementById("filter-list").addEventListener('click', (event) => {
     if (event.target && event.target.matches("input[type='radio']")) {
-      console.log(event);
       d3.select("#filter-selected").html("Selected: " + event.target.value);
     }
   });
