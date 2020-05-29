@@ -62,6 +62,11 @@ d3.json("data.json", function (json) {
   defs.enter().append("svg:path")
     .attr("d", "M0,-5L10,0L0,5");
 
+
+  const radio = Array.from(document.getElementById("filter-list").querySelectorAll('input'));
+  const selectedFilter = radio.length && radio.find(r => r.checked).value;
+  d3.select("#filter-selected").html("Selected: " + selectedFilter);
+  var value = radio.length && radio.find(r => r.checked).value;
   document.getElementById("filter-list").addEventListener('click', (event) => {
     if (event.target && event.target.matches("input[type='radio']")) {
       console.log(event);
