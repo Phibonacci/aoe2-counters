@@ -62,6 +62,13 @@ d3.json("data.json", function (json) {
   defs.enter().append("svg:path")
     .attr("d", "M0,-5L10,0L0,5");
 
+  document.getElementById("filter-list").addEventListener('click', (event) => {
+    if (event.target && event.target.matches("input[type='radio']")) {
+      console.log(event);
+      d3.select("#filter-selected").html("Selected: " + event.target.value);
+    }
+  });
+
   update();
 });
 
@@ -156,8 +163,8 @@ function update() {
   const setEvents = images
     // Append hero text
     .on('click', function (d) {
-      d3.select("h2").html(d.name);
-      d3.select("h3").html("<a href='" + d.link + "' target='_blank' >" + "Wiki link" + "</a>");
+      d3.select("#unit-name").html(d.name);
+      d3.select("#unit-link").html("<a href='" + d.link + "' target='_blank' >" + "Wiki link" + "</a>");
     })
     .on('mouseenter', function () {
       // select element in current context
