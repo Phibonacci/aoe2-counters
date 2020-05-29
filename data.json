@@ -200,6 +200,504 @@
             }
         ]
     },
+    "uniques": [
+        {
+            "name": "Aztecs",
+            "type": "building",
+            "link": "https://ageofempires.fandom.com/wiki/Aztecs_(Age_of_Empires_II)",
+            "img": "assets/icons/civ/aztecs.png",
+            "children": [
+                {
+                    "name": "Jaguar Warrior",
+                    "description": "",
+                    "link": "https://ageofempires.fandom.com/wiki/Jaguar_Warrior",
+                    "img": "assets/icons/unit/Unique Castle/Jaguar Warrior.jpg"
+                }
+            ]
+        },
+        {
+            "name": "Berbers",
+            "type": "building",
+            "link": "https://ageofempires.fandom.com/wiki/Berbers",
+            "img": "assets/icons/civ/berbers.png",
+            "children": [
+                {
+                    "name": "Camel Archer",
+                    "description": "",
+                    "link": "https://ageofempires.fandom.com/wiki/Camel_Archer",
+                    "img": "assets/icons/unit/Unique Castle/Camel Archer.jpg"
+                },
+                {
+                    "name": "Genitour",
+                    "description": "",
+                    "link": "https://ageofempires.fandom.com/wiki/Genitour_(mounted)",
+                    "img": "assets/icons/unit/Unique Other/Genitour.jpg"
+                }
+            ]
+        },
+        {
+            "name": "Britons",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/britons.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Bulgarians",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/bulgarians.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Burmese",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/burmese.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Byzantines",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/byzantines.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Celts",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/celts.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Chinese",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/chinese.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Cumans",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/cumans.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Ethiopians",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/ethiopians.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Franks",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/franks.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Goths",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/goths.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Huns",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/huns.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Incas",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/incas.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Indians",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/indians.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Italians",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/italians.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Japanese",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/japanese.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Khmer",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/khmer.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Koreans",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/koreans.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Lithuanians",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/lithuanians.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Magyars",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/magyars.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Malay",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/malay.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Malians",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/malians.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Mayans",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/mayans.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Mongols",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/mongols.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Persians",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/persians.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Portuguese",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/portuguese.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Saracens",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/saracens.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Slavs",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/slavs.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Spanish",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/spanish.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Tatars",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/tatars.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Teutons",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/teutons.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Turks",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/turks.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Vietnamese",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/vietnamese.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        },
+        {
+            "name": "Vikings",
+            "type": "building",
+            "link": "",
+            "img": "assets/icons/civ/vikings.png",
+            "children": [
+                {
+                    "name": "",
+                    "description": "",
+                    "link": "",
+                    "img": ""
+                }
+            ]
+        }
+    ],
     "counters": {
         "Militia Line": [
             "Archer Line",
@@ -212,7 +710,8 @@
             "Archer Line",
             "Hand Cannoneer",
             "Scorpions Line",
-            "Skirmisher Line"
+            "Skirmisher Line",
+            "Cavalry Archer Line"
         ],
         "Eagle Line": [
             "Militia Line",

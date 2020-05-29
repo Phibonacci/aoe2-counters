@@ -16,6 +16,7 @@ let units;
 let counters;
 let hideBuildings = false;
 let selected = null;
+let expendedBuilding = null;
 
 const force = d3.layout.force();
 
@@ -26,11 +27,15 @@ d3.json("data.json", function (json) {
   units = json.units;
   units.fixed = true;
   counters = json.counters;
+  let id = 0;
 
   function getNameToNode(node) {
+    node.id = ++id;
     node.x = w / 2 + 10 * Math.random();
     node.y = h / 2 + 10 * Math.random();
+    node.units = null;
     if (node.children) {
+      node.units = node.children;
       node.children.forEach(getNameToNode);
     }
     nameToNode[node.name] = node;
@@ -110,8 +115,10 @@ function update() {
       if (d.type === "building") {
         if (d.children) {
           d.children = null;
+          expendedBuilding = null;
         } else {
           d.children = d.units;
+          expendedBuilding = d;
         }
       } else {
         if (d.children) {
@@ -223,15 +230,13 @@ function flatten(units) {
 
   function listNodes(node) {
     if (node.children) {
-      node.units = node.children;
-      node.children.forEach(listNodes);
+      if (node.type === "building" && node !== units && node !== expendedBuilding) {
+        node.children = null;
+      } else {
+        node.children.forEach(listNodes);
+      }
     }
-    if (!node.id) {
-      node.id = ++i;
-    }
-    if (!(node.type === "building") || !hideBuildings) {
-      nodes.push(node);
-    }
+    nodes.push(node);
   }
   listNodes(units);
   if (init) {
