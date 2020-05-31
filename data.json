@@ -200,27 +200,88 @@
             }
         ]
     },
-    "uniques": [
+    "civilizations": [
         {
             "name": "Aztecs",
             "type": "building",
             "link": "https://ageofempires.fandom.com/wiki/Aztecs_(Age_of_Empires_II)",
             "img": "assets/icons/civ/aztecs.png",
-            "children": [
+            "unique": [
                 {
                     "name": "Jaguar Warrior",
                     "description": "",
                     "link": "https://ageofempires.fandom.com/wiki/Jaguar_Warrior",
                     "img": "assets/icons/unit/Unique Castle/Jaguar Warrior.jpg"
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Jaguar Warrior",
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Berbers",
             "type": "building",
             "link": "https://ageofempires.fandom.com/wiki/Berbers",
             "img": "assets/icons/civ/berbers.png",
-            "children": [
+            "unique": [
                 {
                     "name": "Camel Archer",
                     "description": "",
@@ -233,35 +294,215 @@
                     "link": "https://ageofempires.fandom.com/wiki/Genitour_(mounted)",
                     "img": "assets/icons/unit/Unique Other/Genitour.jpg"
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Britons",
             "type": "building",
             "link": "",
             "img": "assets/icons/civ/britons.png",
-            "children": [
+            "unique": [
                 {
                     "name": "",
                     "description": "",
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Bulgarians",
             "type": "building",
             "link": "",
             "img": "assets/icons/civ/bulgarians.png",
-            "children": [
+            "unique": [
                 {
                     "name": "",
                     "description": "",
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Burmese",
@@ -275,7 +516,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Byzantines",
@@ -289,7 +590,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Celts",
@@ -303,7 +664,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Chinese",
@@ -317,7 +738,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Cumans",
@@ -331,7 +812,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Ethiopians",
@@ -345,7 +886,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Franks",
@@ -359,7 +960,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Goths",
@@ -373,7 +1034,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Huns",
@@ -387,7 +1108,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Incas",
@@ -401,7 +1182,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Indians",
@@ -415,7 +1256,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Italians",
@@ -429,7 +1330,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Japanese",
@@ -443,7 +1404,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Khmer",
@@ -457,7 +1478,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Koreans",
@@ -471,7 +1552,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Lithuanians",
@@ -485,7 +1626,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Magyars",
@@ -499,7 +1700,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Malay",
@@ -513,7 +1774,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Malians",
@@ -527,7 +1848,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Mayans",
@@ -541,7 +1922,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Mongols",
@@ -555,7 +1996,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Persians",
@@ -569,7 +2070,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Portuguese",
@@ -583,7 +2144,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Saracens",
@@ -597,7 +2218,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Slavs",
@@ -611,7 +2292,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Spanish",
@@ -625,7 +2366,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Tatars",
@@ -639,7 +2440,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Teutons",
@@ -653,7 +2514,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Turks",
@@ -667,7 +2588,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Vietnamese",
@@ -681,7 +2662,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         },
         {
             "name": "Vikings",
@@ -695,7 +2736,67 @@
                     "link": "",
                     "img": ""
                 }
-            ]
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line",
+                        "Eagle Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line",
+                        "Battle Elephant"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
         }
     ],
     "counters": {

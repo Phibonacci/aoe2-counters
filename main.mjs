@@ -5,6 +5,7 @@ let imageFocusSize;
 let init = true;
 let nameToNode = {};
 let allNodes = [];
+let lastUniqueId = 0;
 
 // rest of vars
 let w = document.getElementById("vis").offsetWidth;
@@ -27,22 +28,61 @@ d3.json("data.json", function (json) {
   units = json.units;
   units.fixed = true;
   counters = json.counters;
-  let id = 0;
+  const civsData = {};
+  const unitNameToCivs = {};
 
-  function getNameToNode(node) {
-    node.id = ++id;
-    node.x = w / 2 + 10 * Math.random();
-    node.y = h / 2 + 10 * Math.random();
-    node.units = null;
-    if (node.children) {
-      node.units = node.children;
-      node.children.forEach(getNameToNode);
+  getAllNodes(units, allNodes, nameToNode);
+  addCivNodes(json.civilizations, unitNameToCivs, allNodes, nameToNode, civsData);
+  addCountersToNodes(allNodes);
+
+  // Build the path
+  const defs = vis.insert("svg:defs")
+    .data(["end"]);
+
+
+  defs.enter().append("svg:path")
+    .attr("d", "M0,-5L10,0L0,5");
+
+  const radio = Array.from(document.getElementById("filter-list").querySelectorAll('input'));
+  const selectedFilter = radio.length && radio.find(r => r.checked).value;
+  updateFilter(selectedFilter, civsData, nameToNode);
+  document.getElementById("filter-list").addEventListener('click', (event) => {
+    if (event.target && event.target.matches("input[type='radio']")) {
+      updateFilter(event.target.value, civsData, nameToNode);
     }
-    nameToNode[node.name] = node;
-    node.init = false;
-    allNodes.push(node);
+  });
+  update();
+});
+
+function updateFilter(civilization, civsData, nameToNode) {
+  d3.select("#filter-selected").html("Selected: " + civilization);
+  if (selected) {
+    selected.children = null;
+    selected = null;
   }
-  getNameToNode(units);
+  const civData = civsData[civilization];
+  units.img = civData.img;
+  for (let [building, units] of Object.entries(civData.buildings)) {
+    nameToNode[building].units = units;
+    nameToNode[building].children = units;
+  }
+  update();
+}
+
+function generateUniqueId() {
+  lastUniqueId += 1;
+  return lastUniqueId;
+}
+
+function getAllNodes(node, allNodes, nameToNode) {
+  setupNode(node, nameToNode, allNodes);
+  if (node.children) {
+    node.units = node.children;
+    node.children.forEach(n => getAllNodes(n, allNodes, nameToNode));
+  }
+}
+
+function addCountersToNodes(allNodes) {
   for (let node of allNodes) {
     node.counters = [];
     if (!(node.name in counters)) {
@@ -53,27 +93,46 @@ d3.json("data.json", function (json) {
       node.counters.push(counter);
     }
   }
+}
 
-  // Build the path
-  const defs = vis.insert("svg:defs")
-    .data(["end"]);
-
-
-  defs.enter().append("svg:path")
-    .attr("d", "M0,-5L10,0L0,5");
-
-
-  const radio = Array.from(document.getElementById("filter-list").querySelectorAll('input'));
-  const selectedFilter = radio.length && radio.find(r => r.checked).value;
-  d3.select("#filter-selected").html("Selected: " + selectedFilter);
-  document.getElementById("filter-list").addEventListener('click', (event) => {
-    if (event.target && event.target.matches("input[type='radio']")) {
-      d3.select("#filter-selected").html("Selected: " + event.target.value);
+function addCivNodes(json, unitNameToCivs, allNodes, nameToNode, civsData) {
+  for (let civ of json) {
+    civsData[civ.name] = civ;
+    if ("unique" in civ) {
+      for (let unique of civ.unique) {
+        setupNode(unique, nameToNode, allNodes);
+      }
     }
-  });
+    civ.buildings = {};
+    for (let [building, units] of Object.entries(civ.units)) {
+      civ.buildings[building] = [];
+      for (let unit of units.good) {
+        civ.buildings[building].push(nameToNode[unit]);
+        if (!(unit in unitNameToCivs)) {
+          unitNameToCivs[unit] = [];
+        }
+        unitNameToCivs[unit].push(civ.name);
+      }
+      for (let unit of units.bad) {
+        civ.buildings[building].push(nameToNode[unit]);
+        if (!(unit in unitNameToCivs)) {
+          unitNameToCivs[unit] = [];
+        }
+        unitNameToCivs[unit].push(civ.name);
+      }
+    }
+  }
+}
 
-  update();
-});
+function setupNode(node, nameToNode, allNodes) {
+  nameToNode[node.name] = node;
+  allNodes.push(node);
+  node.id = generateUniqueId();
+  node.x = w / 2 + 10 * Math.random();
+  node.y = h / 2 + 10 * Math.random();
+  node.units = null;
+  node.init = false;
+}
 
 function update() {
   window.onresize = update;
@@ -146,7 +205,6 @@ function update() {
       }
       update();
     });
-  //.call(force.drag);
 
   const foreignObject = nodeEnter.append('foreignObject')
     .attr("x", function (d) { return -imageFocusSize / 2; })
