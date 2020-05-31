@@ -246,15 +246,6 @@
                     ],
                     "bad": []
                 },
-                "Stable": {
-                    "good": [
-                        "Scout Cavalry Line",
-                        "Knight Line",
-                        "Camel Line",
-                        "Battle Elephant"
-                    ],
-                    "bad": []
-                },
                 "Siege Workshop": {
                     "good": [
                         "Scorpions Line",

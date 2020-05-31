@@ -77,10 +77,14 @@ function updateFilter(civilization, civsData, nameToNode) {
   selectedCiv = civData;
   units.img = civData.img;
   units.name = civData.name;
-  for (let [building, units] of Object.entries(civData.buildings)) {
-    nameToNode[building].units = units;
-    nameToNode[building].children = units;
+  units.units = [];
+  for (let [building, buildingUnits] of Object.entries(civData.buildings)) {
+    const buildingNode = nameToNode[building];
+    units.units.push(buildingNode);
+    buildingNode.units = buildingUnits;
+    buildingNode.children = buildingUnits;
   }
+  units.children = units.units;
 }
 
 function generateUniqueId() {
