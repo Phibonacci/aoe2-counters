@@ -218,17 +218,16 @@
                 "Barracks": {
                     "good": [
                         "Militia Line",
-                        "Spearmen Line",
                         "Eagle Line"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Spearmen Line"
+                    ]
                 },
                 "Archery Range": {
                     "good": [
                         "Skirmisher Line",
-                        "Archer Line",
-                        "Cavalry Archer Line",
-                        "Hand Cannoneer"
+                        "Archer Line"
                     ],
                     "bad": []
                 },
@@ -248,21 +247,22 @@
                 },
                 "Siege Workshop": {
                     "good": [
-                        "Scorpions Line",
                         "Mangonel Line",
                         "Battering Ram Line",
                         "Siege Tower"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Scorpions Line"
+                    ]
                 },
                 "Dock": {
                     "good": [
-                        "Galley Line",
-                        "Cannon Galleon Line",
-                        "Demo Raft Line",
                         "Fire Line"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Demo Raft Line",
+                        "Galley Line"
+                    ]
                 }
             }
         },
@@ -288,22 +288,26 @@
             "units": {
                 "Barracks": {
                     "good": [
-                        "Militia Line",
-                        "Spearmen Line"
+                        "Militia Line"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Spearmen Line"
+                    ]
                 },
                 "Archery Range": {
                     "good": [
+                        "Genitour",
                         "Skirmisher Line",
-                        "Archer Line",
                         "Cavalry Archer Line",
                         "Hand Cannoneer"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Archer Line"
+                    ]
                 },
                 "Castle": {
                     "good": [
+                        "Camel Archer",
                         "Petard",
                         "Trebuchet"
                     ],
@@ -319,20 +323,20 @@
                     "good": [
                         "Scout Cavalry Line",
                         "Knight Line",
-                        "Camel Line",
-                        "Battle Elephant"
+                        "Camel Line"
                     ],
                     "bad": []
                 },
                 "Siege Workshop": {
                     "good": [
                         "Scorpions Line",
-                        "Mangonel Line",
                         "Bombard Cannon",
-                        "Battering Ram Line",
                         "Siege Tower"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Mangonel Line",
+                        "Battering Ram Line"
+                    ]
                 },
                 "Dock": {
                     "good": [
@@ -352,10 +356,10 @@
             "img": "assets/icons/civ/britons.png",
             "unique": [
                 {
-                    "name": "",
+                    "name": "Longbowman",
                     "description": "",
-                    "link": "",
-                    "img": ""
+                    "link": "https://ageofempires.fandom.com/wiki/Longbowman_(Age_of_Empires_II)",
+                    "img": "assets/icons/unit/Unique Castle/Longbowman.jpg"
                 }
             ],
             "units": {
@@ -378,6 +382,7 @@
                 },
                 "Castle": {
                     "good": [
+                        "Longbowman",
                         "Petard",
                         "Trebuchet"
                     ],
