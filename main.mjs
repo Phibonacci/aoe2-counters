@@ -17,7 +17,11 @@ let units;
 let counters;
 let hideBuildings = false;
 let selected = null;
+let selectedCiv = null;
 let expendedBuilding = null;
+
+const civsData = {};
+const unitNameToCivs = {};
 
 const force = d3.layout.force();
 
@@ -28,8 +32,6 @@ d3.json("data.json", function (json) {
   units = json.units;
   units.fixed = true;
   counters = json.counters;
-  const civsData = {};
-  const unitNameToCivs = {};
 
   getAllNodes(units, allNodes, nameToNode);
   addCivNodes(json.civilizations, unitNameToCivs, allNodes, nameToNode, civsData);
@@ -45,28 +47,40 @@ d3.json("data.json", function (json) {
 
   const radio = Array.from(document.getElementById("filter-list").querySelectorAll('input'));
   const selectedFilter = radio.length && radio.find(r => r.checked).value;
-  updateFilter(selectedFilter, civsData, nameToNode);
-  document.getElementById("filter-list").addEventListener('click', (event) => {
-    if (event.target && event.target.matches("input[type='radio']")) {
-      updateFilter(event.target.value, civsData, nameToNode);
-    }
-  });
+  updateFilterAndUpdate(selectedFilter, civsData, nameToNode);
+  setFilterCallback();
   update();
 });
 
-function updateFilter(civilization, civsData, nameToNode) {
-  d3.select("#filter-selected").html("Selected: " + civilization);
+function setFilterCallback() {
+  document.getElementById("filter-list").addEventListener('click', onFilterClick);
+}
+
+function onFilterClick(event) {
+  if (event.target && event.target.matches("input[type='radio']")) {
+    updateFilterAndUpdate(event.target.value, civsData, nameToNode);
+  }
+}
+
+function updateFilterAndUpdate(civilization, civsData, nameToNode) {
   if (selected) {
     selected.children = null;
     selected = null;
   }
+  updateFilter(civilization, civsData, nameToNode);
+  update();
+}
+
+function updateFilter(civilization, civsData, nameToNode) {
+  d3.select("#filter-selected").html("Selected: " + civilization);
   const civData = civsData[civilization];
+  selectedCiv = civData;
   units.img = civData.img;
+  units.name = civData.name;
   for (let [building, units] of Object.entries(civData.buildings)) {
     nameToNode[building].units = units;
     nameToNode[building].children = units;
   }
-  update();
 }
 
 function generateUniqueId() {
@@ -199,6 +213,11 @@ function update() {
             selected.children = null;
           }
           selected = d;
+          if (!unitNameToCivs[selected.name].includes(selectedCiv.name)) {
+            const radioButton = document.querySelector("input[name=filter-pick][value=" + unitNameToCivs[selected.name][0] + "]");
+            radioButton.checked = true;
+            updateFilter(unitNameToCivs[selected.name][0], civsData, nameToNode);
+          }
           hideBuildings = true;
           d.children = d.counters;
         }

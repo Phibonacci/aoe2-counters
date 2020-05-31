@@ -259,7 +259,6 @@
                     "good": [
                         "Scorpions Line",
                         "Mangonel Line",
-                        "Bombard Cannon",
                         "Battering Ram Line",
                         "Siege Tower"
                     ],
@@ -299,8 +298,7 @@
                 "Barracks": {
                     "good": [
                         "Militia Line",
-                        "Spearmen Line",
-                        "Eagle Line"
+                        "Spearmen Line"
                     ],
                     "bad": []
                 },
