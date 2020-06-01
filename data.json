@@ -1484,24 +1484,24 @@
         {
             "name": "Khmer",
             "type": "building",
-            "link": "",
+            "link": "https://ageofempires.fandom.com/wiki/Khmer",
             "img": "assets/icons/civ/khmer.png",
             "unique": [
                 {
-                    "name": "",
+                    "name": "Ballista Elephant",
                     "description": "",
-                    "link": "",
-                    "img": ""
+                    "link": "https://ageofempires.fandom.com/wiki/Ballista_Elephant",
+                    "img": "assets/icons/unit/Unique Castle/Ballista Elephant.jpg"
                 }
             ],
             "units": {
                 "Barracks": {
                     "good": [
-                        "Militia Line",
-                        "Spearmen Line",
-                        "Eagle Line"
+                        "Spearmen Line"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Militia Line"
+                    ]
                 },
                 "Archery Range": {
                     "good": [
@@ -1514,6 +1514,7 @@
                 },
                 "Castle": {
                     "good": [
+                        "Ballista Elephant",
                         "Petard",
                         "Trebuchet"
                     ],
@@ -1529,7 +1530,6 @@
                     "good": [
                         "Scout Cavalry Line",
                         "Knight Line",
-                        "Camel Line",
                         "Battle Elephant Line"
                     ],
                     "bad": []
@@ -1537,43 +1537,49 @@
                 "Siege Workshop": {
                     "good": [
                         "Scorpions Line",
-                        "Mangonel Line",
-                        "Bombard Cannon",
                         "Battering Ram Line",
                         "Siege Tower"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Mangonel Line"
+                    ]
                 },
                 "Dock": {
                     "good": [
                         "Galley Line",
                         "Cannon Galleon Line",
-                        "Demo Raft Line",
                         "Fire Line"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Demo Raft Line"
+                    ]
                 }
             }
         },
         {
             "name": "Koreans",
             "type": "building",
-            "link": "",
+            "link": "https://ageofempires.fandom.com/wiki/Koreans",
             "img": "assets/icons/civ/koreans.png",
             "unique": [
                 {
-                    "name": "",
+                    "name": "War Wagon",
                     "description": "",
-                    "link": "",
-                    "img": ""
+                    "link": "https://ageofempires.fandom.com/wiki/War_Wagon_(Age_of_Empires_II)",
+                    "img": "assets/icons/unit/Unique Castle/War Wagon.jpg"
+                },
+                {
+                    "name": "Turtle Ship",
+                    "description": "",
+                    "link": "https://ageofempires.fandom.com/wiki/Turtle_Ship",
+                    "img": "assets/icons/unit/Unique Other/Turtle Ship.jpg"
                 }
             ],
             "units": {
                 "Barracks": {
                     "good": [
                         "Militia Line",
-                        "Spearmen Line",
-                        "Eagle Line"
+                        "Spearmen Line"
                     ],
                     "bad": []
                 },
@@ -1588,6 +1594,7 @@
                 },
                 "Castle": {
                     "good": [
+                        "War Wagon",
                         "Petard",
                         "Trebuchet"
                     ],
@@ -1602,66 +1609,67 @@
                 "Stable": {
                     "good": [
                         "Scout Cavalry Line",
-                        "Knight Line",
-                        "Camel Line",
-                        "Battle Elephant Line"
+                        "Knight Line"
                     ],
                     "bad": []
                 },
                 "Siege Workshop": {
                     "good": [
-                        "Scorpions Line",
                         "Mangonel Line",
                         "Bombard Cannon",
-                        "Battering Ram Line",
                         "Siege Tower"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Scorpions Line",
+                        "Battering Ram Line"
+                    ]
                 },
                 "Dock": {
                     "good": [
                         "Galley Line",
-                        "Cannon Galleon Line",
-                        "Demo Raft Line",
-                        "Fire Line"
+                        "Fire Line",
+                        "Turtle Ship"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Cannon Galleon Line"
+                    ]
                 }
             }
         },
         {
             "name": "Lithuanians",
             "type": "building",
-            "link": "",
+            "link": "https://ageofempires.fandom.com/wiki/Lithuanians",
             "img": "assets/icons/civ/lithuanians.png",
             "unique": [
                 {
-                    "name": "",
+                    "name": "Leitis",
                     "description": "",
-                    "link": "",
-                    "img": ""
+                    "link": "https://ageofempires.fandom.com/wiki/Leitis",
+                    "img": "assets/icons/unit/Unique Castle/Leitis.jpg"
                 }
             ],
             "units": {
                 "Barracks": {
                     "good": [
                         "Militia Line",
-                        "Spearmen Line",
-                        "Eagle Line"
+                        "Spearmen Line"
                     ],
                     "bad": []
                 },
                 "Archery Range": {
                     "good": [
                         "Skirmisher Line",
-                        "Archer Line",
                         "Cavalry Archer Line",
                         "Hand Cannoneer"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Archer Line"
+                    ]
                 },
                 "Castle": {
                     "good": [
+                        "Leitis",
                         "Petard",
                         "Trebuchet"
                     ],
@@ -1676,52 +1684,51 @@
                 "Stable": {
                     "good": [
                         "Scout Cavalry Line",
-                        "Knight Line",
-                        "Camel Line",
-                        "Battle Elephant Line"
+                        "Knight Line"
                     ],
                     "bad": []
                 },
                 "Siege Workshop": {
                     "good": [
-                        "Scorpions Line",
-                        "Mangonel Line",
                         "Bombard Cannon",
-                        "Battering Ram Line",
                         "Siege Tower"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Battering Ram Line"
+                    ]
                 },
                 "Dock": {
                     "good": [
                         "Galley Line",
                         "Cannon Galleon Line",
-                        "Demo Raft Line",
                         "Fire Line"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Demo Raft Line"
+                    ]
                 }
             }
         },
         {
             "name": "Magyars",
             "type": "building",
-            "link": "",
+            "link": "https://ageofempires.fandom.com/wiki/Magyars",
             "img": "assets/icons/civ/magyars.png",
             "unique": [
                 {
-                    "name": "",
+                    "name": "Magyar Huszar",
                     "description": "",
-                    "link": "",
-                    "img": ""
+                    "link": "https://ageofempires.fandom.com/wiki/Magyar_Huszar",
+                    "img": "assets/icons/unit/Unique Castle/Magyar Huszar.jpg"
                 }
             ],
             "units": {
                 "Barracks": {
                     "good": [
                         "Militia Line",
-                        "Spearmen Line",
-                        "Eagle Line"
+                        "Spearmen Line"
                     ],
                     "bad": []
                 },
@@ -1729,13 +1736,13 @@
                     "good": [
                         "Skirmisher Line",
                         "Archer Line",
-                        "Cavalry Archer Line",
-                        "Hand Cannoneer"
+                        "Cavalry Archer Line"
                     ],
                     "bad": []
                 },
                 "Castle": {
                     "good": [
+                        "Magyar Huszar",
                         "Petard",
                         "Trebuchet"
                     ],
@@ -1750,66 +1757,66 @@
                 "Stable": {
                     "good": [
                         "Scout Cavalry Line",
-                        "Knight Line",
-                        "Camel Line",
-                        "Battle Elephant Line"
+                        "Knight Line"
                     ],
                     "bad": []
                 },
                 "Siege Workshop": {
                     "good": [
                         "Scorpions Line",
-                        "Mangonel Line",
-                        "Bombard Cannon",
-                        "Battering Ram Line",
                         "Siege Tower"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Mangonel Line",
+                        "Battering Ram Line"
+                    ]
                 },
                 "Dock": {
                     "good": [
                         "Galley Line",
-                        "Cannon Galleon Line",
-                        "Demo Raft Line",
                         "Fire Line"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Demo Raft Line",
+                        "Cannon Galleon Line"
+                    ]
                 }
             }
         },
         {
             "name": "Malay",
             "type": "building",
-            "link": "",
+            "link": "https://ageofempires.fandom.com/wiki/Malay",
             "img": "assets/icons/civ/malay.png",
             "unique": [
                 {
-                    "name": "",
+                    "name": "Karambit Warrior",
                     "description": "",
-                    "link": "",
-                    "img": ""
+                    "link": "https://ageofempires.fandom.com/wiki/Karambit_Warrior",
+                    "img": "assets/icons/unit/Unique Castle/Karambit Warrior.jpg"
                 }
             ],
             "units": {
                 "Barracks": {
                     "good": [
-                        "Militia Line",
-                        "Spearmen Line",
-                        "Eagle Line"
+                        "Spearmen Line"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Militia Line"
+                    ]
                 },
                 "Archery Range": {
                     "good": [
                         "Skirmisher Line",
-                        "Archer Line",
-                        "Cavalry Archer Line",
-                        "Hand Cannoneer"
+                        "Archer Line"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Cavalry Archer Line"
+                    ]
                 },
                 "Castle": {
                     "good": [
+                        "Karambit Warrior",
                         "Petard",
                         "Trebuchet"
                     ],
@@ -1823,55 +1830,57 @@
                 },
                 "Stable": {
                     "good": [
-                        "Scout Cavalry Line",
-                        "Knight Line",
-                        "Camel Line",
                         "Battle Elephant Line"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Scout Cavalry Line",
+                        "Knight Line"
+                    ]
                 },
                 "Siege Workshop": {
                     "good": [
                         "Scorpions Line",
-                        "Mangonel Line",
                         "Bombard Cannon",
-                        "Battering Ram Line",
                         "Siege Tower"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Mangonel Line",
+                        "Battering Ram Line"
+                    ]
                 },
                 "Dock": {
                     "good": [
                         "Galley Line",
                         "Cannon Galleon Line",
-                        "Demo Raft Line",
                         "Fire Line"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Demo Raft Line"
+                    ]
                 }
             }
         },
         {
             "name": "Malians",
             "type": "building",
-            "link": "",
+            "link": "https://ageofempires.fandom.com/wiki/Malians",
             "img": "assets/icons/civ/malians.png",
             "unique": [
                 {
-                    "name": "",
+                    "name": "Gbeto",
                     "description": "",
-                    "link": "",
-                    "img": ""
+                    "link": "https://ageofempires.fandom.com/wiki/Gbeto",
+                    "img": "assets/icons/unit/Unique Castle/Gbeto.jpg"
                 }
             ],
             "units": {
                 "Barracks": {
                     "good": [
-                        "Militia Line",
-                        "Spearmen Line",
-                        "Eagle Line"
+                        "Militia Line"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Spearmen Line"
+                    ]
                 },
                 "Archery Range": {
                     "good": [
@@ -1884,6 +1893,7 @@
                 },
                 "Castle": {
                     "good": [
+                        "Gbeto",
                         "Petard",
                         "Trebuchet"
                     ],
@@ -1897,67 +1907,69 @@
                 },
                 "Stable": {
                     "good": [
-                        "Scout Cavalry Line",
                         "Knight Line",
-                        "Camel Line",
-                        "Battle Elephant Line"
+                        "Camel Line"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Scout Cavalry Line"
+                    ]
                 },
                 "Siege Workshop": {
                     "good": [
-                        "Scorpions Line",
                         "Mangonel Line",
                         "Bombard Cannon",
-                        "Battering Ram Line",
                         "Siege Tower"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Scorpions Line",
+                        "Battering Ram Line"
+                    ]
                 },
                 "Dock": {
                     "good": [
-                        "Galley Line",
-                        "Cannon Galleon Line",
                         "Demo Raft Line",
                         "Fire Line"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Galley Line",
+                        "Cannon Galleon Line"
+                    ]
                 }
             }
         },
         {
             "name": "Mayans",
             "type": "building",
-            "link": "",
+            "link": "https://ageofempires.fandom.com/wiki/Mayans",
             "img": "assets/icons/civ/mayans.png",
             "unique": [
                 {
-                    "name": "",
+                    "name": "Plumed Archer",
                     "description": "",
-                    "link": "",
-                    "img": ""
+                    "link": "https://ageofempires.fandom.com/wiki/Plumed_Archer",
+                    "img": "assets/icons/unit/Unique Castle/Plumed Archer.jpg"
                 }
             ],
             "units": {
                 "Barracks": {
                     "good": [
-                        "Militia Line",
                         "Spearmen Line",
                         "Eagle Line"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Militia Line"
+                    ]
                 },
                 "Archery Range": {
                     "good": [
                         "Skirmisher Line",
-                        "Archer Line",
-                        "Cavalry Archer Line",
-                        "Hand Cannoneer"
+                        "Archer Line"
                     ],
                     "bad": []
                 },
                 "Castle": {
                     "good": [
+                        "Plumed Archer",
                         "Petard",
                         "Trebuchet"
                     ],
@@ -1969,29 +1981,19 @@
                     ],
                     "bad": []
                 },
-                "Stable": {
-                    "good": [
-                        "Scout Cavalry Line",
-                        "Knight Line",
-                        "Camel Line",
-                        "Battle Elephant Line"
-                    ],
-                    "bad": []
-                },
                 "Siege Workshop": {
                     "good": [
                         "Scorpions Line",
-                        "Mangonel Line",
-                        "Bombard Cannon",
                         "Battering Ram Line",
                         "Siege Tower"
                     ],
-                    "bad": []
+                    "bad": [
+                        "Mangonel Line"
+                    ]
                 },
                 "Dock": {
                     "good": [
                         "Galley Line",
-                        "Cannon Galleon Line",
                         "Demo Raft Line",
                         "Fire Line"
                     ],
