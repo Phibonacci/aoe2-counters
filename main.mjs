@@ -47,7 +47,7 @@ d3.json("data.json", function (json) {
 
   const radio = Array.from(document.getElementById("filter-list").querySelectorAll('input'));
   const selectedFilter = radio.length && radio.find(r => r.checked).value;
-  updateFilterAndUpdate(selectedFilter, civsData, nameToNode);
+  updateFilterAndRefresh(selectedFilter, civsData, nameToNode);
   setFilterCallback();
   update();
 });
@@ -58,11 +58,11 @@ function setFilterCallback() {
 
 function onFilterClick(event) {
   if (event.target && event.target.matches("input[type='radio']")) {
-    updateFilterAndUpdate(event.target.value, civsData, nameToNode);
+    updateFilterAndRefresh(event.target.value, civsData, nameToNode);
   }
 }
 
-function updateFilterAndUpdate(civilization, civsData, nameToNode) {
+function updateFilterAndRefresh(civilization, civsData, nameToNode) {
   if (selected) {
     selected.children = null;
     selected = null;
@@ -77,6 +77,7 @@ function updateFilter(civilization, civsData, nameToNode) {
   selectedCiv = civData;
   units.img = civData.img;
   units.name = civData.name;
+  units.link = civData.link;
   units.units = [];
   for (let [building, buildingUnits] of Object.entries(civData.buildings)) {
     const buildingNode = nameToNode[building];
