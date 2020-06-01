@@ -87,10 +87,16 @@
                         "img": "assets/icons/unit/Stable/Camel Rider.jpg"
                     },
                     {
-                        "name": "Battle Elephant",
+                        "name": "Battle Elephant Line",
                         "description": "",
                         "link": "https://ageofempires.fandom.com/wiki/Battle_Elephant",
                         "img": "assets/icons/unit/Stable/Battle Elephant.jpg"
+                    },
+                    {
+                        "name": "Steppe Lancer Line",
+                        "description": "",
+                        "link": "https://ageofempires.fandom.com/wiki/Steppe_Lancer",
+                        "img": "assets/icons/unit/Unique Other/Steppe Lancer.jpg"
                     }
                 ]
             },
@@ -352,7 +358,7 @@
         {
             "name": "Britons",
             "type": "building",
-            "link": "",
+            "link": "https://ageofempires.fandom.com/wiki/Britons",
             "img": "assets/icons/civ/britons.png",
             "unique": [
                 {
@@ -366,8 +372,7 @@
                 "Barracks": {
                     "good": [
                         "Militia Line",
-                        "Spearmen Line",
-                        "Eagle Line"
+                        "Spearmen Line"
                     ],
                     "bad": []
                 },
@@ -375,8 +380,7 @@
                     "good": [
                         "Skirmisher Line",
                         "Archer Line",
-                        "Cavalry Archer Line",
-                        "Hand Cannoneer"
+                        "Cavalry Archer Line"
                     ],
                     "bad": []
                 },
@@ -396,10 +400,524 @@
                 },
                 "Stable": {
                     "good": [
+                        "Knight Line"
+                    ],
+                    "bad": [
+                        "Scout Cavalry Line"
+                    ]
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Siege Tower"
+                    ],
+                    "bad": [
+                        "Mangonel Line",
+                        "Battering Ram Line"
+                    ]
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": [
+                        "Cannon Galleon Line"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Bulgarians",
+            "type": "building",
+            "link": "https://ageofempires.fandom.com/wiki/Bulgarians",
+            "img": "assets/icons/civ/bulgarians.png",
+            "unique": [
+                {
+                    "name": "Konnik",
+                    "description": "",
+                    "link": "https://ageofempires.fandom.com/wiki/Konnik",
+                    "img": "assets/icons/unit/Unique Castle/Konnik (mounted).jpg"
+                }
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Spearmen Line"
+                    ],
+                    "bad": [
+                        "Militia Line"
+                    ]
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Cavalry Archer Line"
+                    ],
+                    "bad": [
+                        "Archer Line"
+                    ]
+                },
+                "Castle": {
+                    "good": [
+                        "Konnik",
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line"
+                    ],
+                    "bad": [
+                        "Cannon Galleon Line",
+                        "Fire Line",
+                        "Demo Raft Line"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Burmese",
+            "type": "building",
+            "link": "https://ageofempires.fandom.com/wiki/Burmese",
+            "img": "assets/icons/civ/burmese.png",
+            "unique": [
+                {
+                    "name": "Arambai",
+                    "description": "",
+                    "link": "https://ageofempires.fandom.com/wiki/Arambai",
+                    "img": "assets/icons/unit/Unique Castle/Arambai.jpg"
+                }
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Cavalry Archer Line"
+                    ],
+                    "bad": [
+                        "Archer Line"
+                    ]
+                },
+                "Castle": {
+                    "good": [
+                        "Arambai",
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
                         "Scout Cavalry Line",
                         "Knight Line",
-                        "Camel Line",
-                        "Battle Elephant"
+                        "Battle Elephant Line"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Bombard Cannon",
+                        "Siege Tower"
+                    ],
+                    "bad": [
+                        "Mangonel Line",
+                        "Battering Ram Line"
+                    ]
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line"
+                    ],
+                    "bad": [
+                        "Fire Line",
+                        "Demo Raft Line"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Byzantines",
+            "type": "building",
+            "link": "https://ageofempires.fandom.com/wiki/Byzantines",
+            "img": "assets/icons/civ/byzantines.png",
+            "unique": [
+                {
+                    "name": "Cataphract",
+                    "description": "",
+                    "link": "https://ageofempires.fandom.com/wiki/Cataphract_(Age_of_Empires_II)",
+                    "img": "assets/icons/unit/Unique Castle/Cataphract.jpg"
+                }
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Cataphract",
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Bombard Cannon",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": [
+                        "Scorpions Line",
+                        "Mangonel Line"
+                    ]
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Cannon Galleon Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": []
+                }
+            }
+        },
+        {
+            "name": "Celts",
+            "type": "building",
+            "link": "https://ageofempires.fandom.com/wiki/Celts",
+            "img": "assets/icons/civ/celts.png",
+            "unique": [
+                {
+                    "name": "Woad Raider",
+                    "description": "",
+                    "link": "https://ageofempires.fandom.com/wiki/Woad_Raider",
+                    "img": "assets/icons/unit/Unique Castle/Woad Raider.jpg"
+                }
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [],
+                    "bad": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line"
+                    ]
+                },
+                "Castle": {
+                    "good": [
+                        "Woad Raider",
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Mangonel Line",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": []
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Demo Raft Line"
+                    ],
+                    "bad": [
+                        "Cannon Galleon Line",
+                        "Fire Line"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Chinese",
+            "type": "building",
+            "link": "https://ageofempires.fandom.com/wiki/Chinese_(Age_of_Empires_II)",
+            "img": "assets/icons/civ/chinese.png",
+            "unique": [
+                {
+                    "name": "Chu Ko Nu",
+                    "description": "https://ageofempires.fandom.com/wiki/Chinese",
+                    "link": "https://ageofempires.fandom.com/wiki/Chu_Ko_Nu_(Age_of_Empires_II)",
+                    "img": "assets/icons/unit/Unique Castle/Chu Ko Nu.jpg"
+                }
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Knight Line",
+                        "Camel Line"
+                    ],
+                    "bad": [
+                        "Scout Cavalry Line"
+                    ]
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": [
+                        "Mangonel Line"
+                    ]
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Demo Raft Line"
+                    ],
+                    "bad": [
+                        "Fire Line",
+                        "Cannon Galleon Line"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Cumans",
+            "type": "building",
+            "link": "https://ageofempires.fandom.com/wiki/Cumans",
+            "img": "assets/icons/civ/cumans.png",
+            "unique": [
+                {
+                    "name": "Kipchak",
+                    "description": "",
+                    "link": "https://ageofempires.fandom.com/wiki/Kipchak",
+                    "img": "assets/icons/unit/Unique Castle/Kipchak.jpg"
+                }
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Cavalry Archer Line"
+                    ],
+                    "bad": [
+                        "Archer Line"
+                    ]
+                },
+                "Castle": {
+                    "good": [
+                        "Kipchak",
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Steppe Lancer Line"
+                    ],
+                    "bad": [
+                        "Camel Line"
+                    ]
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Mangonel Line",
+                        "Battering Ram Line",
+                        "Siege Tower"
+                    ],
+                    "bad": [
+                        "Scorpions Line"
+                    ]
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Fire Line"
+                    ],
+                    "bad": [
+                        "Demo Raft Line"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Ethiopians",
+            "type": "building",
+            "link": "https://ageofempires.fandom.com/wiki/Ethiopians",
+            "img": "assets/icons/civ/ethiopians.png",
+            "unique": [
+                {
+                    "name": "Shotel Warrior",
+                    "description": "",
+                    "link": "https://ageofempires.fandom.com/wiki/Shotel_Warrior",
+                    "img": "assets/icons/unit/Unique Castle/Shotel Warrior.jpg"
+                }
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Spearmen Line"
+                    ],
+                    "bad": [
+                        "Militia Line"
+                    ]
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Archer Line",
+                        "Cavalry Archer Line"
+                    ],
+                    "bad": []
+                },
+                "Castle": {
+                    "good": [
+                        "Shotel Warrior",
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Camel Line"
                     ],
                     "bad": []
                 },
@@ -415,20 +933,248 @@
                 },
                 "Dock": {
                     "good": [
-                        "Galley Line",
+                        "Galley Line"
+                    ],
+                    "bad": [
                         "Cannon Galleon Line",
                         "Demo Raft Line",
                         "Fire Line"
-                    ],
-                    "bad": []
+                    ]
                 }
             }
         },
         {
-            "name": "Bulgarians",
+            "name": "Franks",
+            "type": "building",
+            "link": "https://ageofempires.fandom.com/wiki/Franks",
+            "img": "assets/icons/civ/franks.png",
+            "unique": [
+                {
+                    "name": "Throwing Axeman",
+                    "description": "",
+                    "link": "https://ageofempires.fandom.com/wiki/Throwing_Axeman_(Age_of_Empires_II)",
+                    "img": ""
+                }
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": [
+                        "Archer Line",
+                        "Cavalry Archer Line"
+                    ]
+                },
+                "Castle": {
+                    "good": [
+                        "Throwing Axeman",
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Knight Line"
+                    ],
+                    "bad": [
+                        "Scout Cavalry Line"
+                    ]
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Bombard Cannon",
+                        "Siege Tower"
+                    ],
+                    "bad": [
+                        "Mangonel Line",
+                        "Battering Ram Line"
+                    ]
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": [
+                        "Cannon Galleon Line"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Goths",
+            "type": "building",
+            "link": "https://ageofempires.fandom.com/wiki/Goths",
+            "img": "assets/icons/civ/goths.png",
+            "unique": [
+                {
+                    "name": "Huskarl",
+                    "description": "",
+                    "link": "https://ageofempires.fandom.com/wiki/Huskarl_(Age_of_Empires_II)",
+                    "img": "assets/icons/unit/Unique Castle/Huskarl.jpg"
+                }
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": [
+                        "Archer Line"
+                    ]
+                },
+                "Castle": {
+                    "good": [
+                        "Huskarl",
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [],
+                    "bad": [
+                        "Scout Cavalry Line",
+                        "Knight Line"
+                    ]
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Bombard Cannon",
+                        "Siege Tower"
+                    ],
+                    "bad": [
+                        "Mangonel Line",
+                        "Battering Ram Line"
+                    ]
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": [
+                        "Cannon Galleon Line"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Huns",
+            "type": "building",
+            "link": "https://ageofempires.fandom.com/wiki/Huns",
+            "img": "assets/icons/civ/huns.png",
+            "unique": [
+                {
+                    "name": "Tarkan",
+                    "description": "",
+                    "link": "https://ageofempires.fandom.com/wiki/Tarkan",
+                    "img": "assets/icons/unit/Unique Castle/Tarkan.jpg"
+                }
+            ],
+            "units": {
+                "Barracks": {
+                    "good": [
+                        "Militia Line",
+                        "Spearmen Line"
+                    ],
+                    "bad": []
+                },
+                "Archery Range": {
+                    "good": [
+                        "Skirmisher Line",
+                        "Cavalry Archer Line",
+                        "Hand Cannoneer"
+                    ],
+                    "bad": [
+                        "Archer Line"
+                    ]
+                },
+                "Castle": {
+                    "good": [
+                        "Tarkan",
+                        "Petard",
+                        "Trebuchet"
+                    ],
+                    "bad": []
+                },
+                "Monastary": {
+                    "good": [
+                        "Monk"
+                    ],
+                    "bad": []
+                },
+                "Stable": {
+                    "good": [
+                        "Scout Cavalry Line",
+                        "Knight Line",
+                        "Tarkan"
+                    ],
+                    "bad": []
+                },
+                "Siege Workshop": {
+                    "good": [
+                        "Scorpions Line",
+                        "Bombard Cannon",
+                        "Siege Tower"
+                    ],
+                    "bad": [
+                        "Mangonel Line",
+                        "Battering Ram Line"
+                    ]
+                },
+                "Dock": {
+                    "good": [
+                        "Galley Line",
+                        "Demo Raft Line",
+                        "Fire Line"
+                    ],
+                    "bad": [
+                        "Cannon Galleon Line"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Incas",
             "type": "building",
             "link": "",
-            "img": "assets/icons/civ/bulgarians.png",
+            "img": "assets/icons/civ/incas.png",
             "unique": [
                 {
                     "name": "",
@@ -473,747 +1219,7 @@
                         "Scout Cavalry Line",
                         "Knight Line",
                         "Camel Line",
-                        "Battle Elephant"
-                    ],
-                    "bad": []
-                },
-                "Siege Workshop": {
-                    "good": [
-                        "Scorpions Line",
-                        "Mangonel Line",
-                        "Bombard Cannon",
-                        "Battering Ram Line",
-                        "Siege Tower"
-                    ],
-                    "bad": []
-                },
-                "Dock": {
-                    "good": [
-                        "Galley Line",
-                        "Cannon Galleon Line",
-                        "Demo Raft Line",
-                        "Fire Line"
-                    ],
-                    "bad": []
-                }
-            }
-        },
-        {
-            "name": "Burmese",
-            "type": "building",
-            "link": "",
-            "img": "assets/icons/civ/burmese.png",
-            "children": [
-                {
-                    "name": "",
-                    "description": "",
-                    "link": "",
-                    "img": ""
-                }
-            ],
-            "units": {
-                "Barracks": {
-                    "good": [
-                        "Militia Line",
-                        "Spearmen Line",
-                        "Eagle Line"
-                    ],
-                    "bad": []
-                },
-                "Archery Range": {
-                    "good": [
-                        "Skirmisher Line",
-                        "Archer Line",
-                        "Cavalry Archer Line",
-                        "Hand Cannoneer"
-                    ],
-                    "bad": []
-                },
-                "Castle": {
-                    "good": [
-                        "Petard",
-                        "Trebuchet"
-                    ],
-                    "bad": []
-                },
-                "Monastary": {
-                    "good": [
-                        "Monk"
-                    ],
-                    "bad": []
-                },
-                "Stable": {
-                    "good": [
-                        "Scout Cavalry Line",
-                        "Knight Line",
-                        "Camel Line",
-                        "Battle Elephant"
-                    ],
-                    "bad": []
-                },
-                "Siege Workshop": {
-                    "good": [
-                        "Scorpions Line",
-                        "Mangonel Line",
-                        "Bombard Cannon",
-                        "Battering Ram Line",
-                        "Siege Tower"
-                    ],
-                    "bad": []
-                },
-                "Dock": {
-                    "good": [
-                        "Galley Line",
-                        "Cannon Galleon Line",
-                        "Demo Raft Line",
-                        "Fire Line"
-                    ],
-                    "bad": []
-                }
-            }
-        },
-        {
-            "name": "Byzantines",
-            "type": "building",
-            "link": "",
-            "img": "assets/icons/civ/byzantines.png",
-            "children": [
-                {
-                    "name": "",
-                    "description": "",
-                    "link": "",
-                    "img": ""
-                }
-            ],
-            "units": {
-                "Barracks": {
-                    "good": [
-                        "Militia Line",
-                        "Spearmen Line",
-                        "Eagle Line"
-                    ],
-                    "bad": []
-                },
-                "Archery Range": {
-                    "good": [
-                        "Skirmisher Line",
-                        "Archer Line",
-                        "Cavalry Archer Line",
-                        "Hand Cannoneer"
-                    ],
-                    "bad": []
-                },
-                "Castle": {
-                    "good": [
-                        "Petard",
-                        "Trebuchet"
-                    ],
-                    "bad": []
-                },
-                "Monastary": {
-                    "good": [
-                        "Monk"
-                    ],
-                    "bad": []
-                },
-                "Stable": {
-                    "good": [
-                        "Scout Cavalry Line",
-                        "Knight Line",
-                        "Camel Line",
-                        "Battle Elephant"
-                    ],
-                    "bad": []
-                },
-                "Siege Workshop": {
-                    "good": [
-                        "Scorpions Line",
-                        "Mangonel Line",
-                        "Bombard Cannon",
-                        "Battering Ram Line",
-                        "Siege Tower"
-                    ],
-                    "bad": []
-                },
-                "Dock": {
-                    "good": [
-                        "Galley Line",
-                        "Cannon Galleon Line",
-                        "Demo Raft Line",
-                        "Fire Line"
-                    ],
-                    "bad": []
-                }
-            }
-        },
-        {
-            "name": "Celts",
-            "type": "building",
-            "link": "",
-            "img": "assets/icons/civ/celts.png",
-            "children": [
-                {
-                    "name": "",
-                    "description": "",
-                    "link": "",
-                    "img": ""
-                }
-            ],
-            "units": {
-                "Barracks": {
-                    "good": [
-                        "Militia Line",
-                        "Spearmen Line",
-                        "Eagle Line"
-                    ],
-                    "bad": []
-                },
-                "Archery Range": {
-                    "good": [
-                        "Skirmisher Line",
-                        "Archer Line",
-                        "Cavalry Archer Line",
-                        "Hand Cannoneer"
-                    ],
-                    "bad": []
-                },
-                "Castle": {
-                    "good": [
-                        "Petard",
-                        "Trebuchet"
-                    ],
-                    "bad": []
-                },
-                "Monastary": {
-                    "good": [
-                        "Monk"
-                    ],
-                    "bad": []
-                },
-                "Stable": {
-                    "good": [
-                        "Scout Cavalry Line",
-                        "Knight Line",
-                        "Camel Line",
-                        "Battle Elephant"
-                    ],
-                    "bad": []
-                },
-                "Siege Workshop": {
-                    "good": [
-                        "Scorpions Line",
-                        "Mangonel Line",
-                        "Bombard Cannon",
-                        "Battering Ram Line",
-                        "Siege Tower"
-                    ],
-                    "bad": []
-                },
-                "Dock": {
-                    "good": [
-                        "Galley Line",
-                        "Cannon Galleon Line",
-                        "Demo Raft Line",
-                        "Fire Line"
-                    ],
-                    "bad": []
-                }
-            }
-        },
-        {
-            "name": "Chinese",
-            "type": "building",
-            "link": "",
-            "img": "assets/icons/civ/chinese.png",
-            "children": [
-                {
-                    "name": "",
-                    "description": "",
-                    "link": "",
-                    "img": ""
-                }
-            ],
-            "units": {
-                "Barracks": {
-                    "good": [
-                        "Militia Line",
-                        "Spearmen Line",
-                        "Eagle Line"
-                    ],
-                    "bad": []
-                },
-                "Archery Range": {
-                    "good": [
-                        "Skirmisher Line",
-                        "Archer Line",
-                        "Cavalry Archer Line",
-                        "Hand Cannoneer"
-                    ],
-                    "bad": []
-                },
-                "Castle": {
-                    "good": [
-                        "Petard",
-                        "Trebuchet"
-                    ],
-                    "bad": []
-                },
-                "Monastary": {
-                    "good": [
-                        "Monk"
-                    ],
-                    "bad": []
-                },
-                "Stable": {
-                    "good": [
-                        "Scout Cavalry Line",
-                        "Knight Line",
-                        "Camel Line",
-                        "Battle Elephant"
-                    ],
-                    "bad": []
-                },
-                "Siege Workshop": {
-                    "good": [
-                        "Scorpions Line",
-                        "Mangonel Line",
-                        "Bombard Cannon",
-                        "Battering Ram Line",
-                        "Siege Tower"
-                    ],
-                    "bad": []
-                },
-                "Dock": {
-                    "good": [
-                        "Galley Line",
-                        "Cannon Galleon Line",
-                        "Demo Raft Line",
-                        "Fire Line"
-                    ],
-                    "bad": []
-                }
-            }
-        },
-        {
-            "name": "Cumans",
-            "type": "building",
-            "link": "",
-            "img": "assets/icons/civ/cumans.png",
-            "children": [
-                {
-                    "name": "",
-                    "description": "",
-                    "link": "",
-                    "img": ""
-                }
-            ],
-            "units": {
-                "Barracks": {
-                    "good": [
-                        "Militia Line",
-                        "Spearmen Line",
-                        "Eagle Line"
-                    ],
-                    "bad": []
-                },
-                "Archery Range": {
-                    "good": [
-                        "Skirmisher Line",
-                        "Archer Line",
-                        "Cavalry Archer Line",
-                        "Hand Cannoneer"
-                    ],
-                    "bad": []
-                },
-                "Castle": {
-                    "good": [
-                        "Petard",
-                        "Trebuchet"
-                    ],
-                    "bad": []
-                },
-                "Monastary": {
-                    "good": [
-                        "Monk"
-                    ],
-                    "bad": []
-                },
-                "Stable": {
-                    "good": [
-                        "Scout Cavalry Line",
-                        "Knight Line",
-                        "Camel Line",
-                        "Battle Elephant"
-                    ],
-                    "bad": []
-                },
-                "Siege Workshop": {
-                    "good": [
-                        "Scorpions Line",
-                        "Mangonel Line",
-                        "Bombard Cannon",
-                        "Battering Ram Line",
-                        "Siege Tower"
-                    ],
-                    "bad": []
-                },
-                "Dock": {
-                    "good": [
-                        "Galley Line",
-                        "Cannon Galleon Line",
-                        "Demo Raft Line",
-                        "Fire Line"
-                    ],
-                    "bad": []
-                }
-            }
-        },
-        {
-            "name": "Ethiopians",
-            "type": "building",
-            "link": "",
-            "img": "assets/icons/civ/ethiopians.png",
-            "children": [
-                {
-                    "name": "",
-                    "description": "",
-                    "link": "",
-                    "img": ""
-                }
-            ],
-            "units": {
-                "Barracks": {
-                    "good": [
-                        "Militia Line",
-                        "Spearmen Line",
-                        "Eagle Line"
-                    ],
-                    "bad": []
-                },
-                "Archery Range": {
-                    "good": [
-                        "Skirmisher Line",
-                        "Archer Line",
-                        "Cavalry Archer Line",
-                        "Hand Cannoneer"
-                    ],
-                    "bad": []
-                },
-                "Castle": {
-                    "good": [
-                        "Petard",
-                        "Trebuchet"
-                    ],
-                    "bad": []
-                },
-                "Monastary": {
-                    "good": [
-                        "Monk"
-                    ],
-                    "bad": []
-                },
-                "Stable": {
-                    "good": [
-                        "Scout Cavalry Line",
-                        "Knight Line",
-                        "Camel Line",
-                        "Battle Elephant"
-                    ],
-                    "bad": []
-                },
-                "Siege Workshop": {
-                    "good": [
-                        "Scorpions Line",
-                        "Mangonel Line",
-                        "Bombard Cannon",
-                        "Battering Ram Line",
-                        "Siege Tower"
-                    ],
-                    "bad": []
-                },
-                "Dock": {
-                    "good": [
-                        "Galley Line",
-                        "Cannon Galleon Line",
-                        "Demo Raft Line",
-                        "Fire Line"
-                    ],
-                    "bad": []
-                }
-            }
-        },
-        {
-            "name": "Franks",
-            "type": "building",
-            "link": "",
-            "img": "assets/icons/civ/franks.png",
-            "children": [
-                {
-                    "name": "",
-                    "description": "",
-                    "link": "",
-                    "img": ""
-                }
-            ],
-            "units": {
-                "Barracks": {
-                    "good": [
-                        "Militia Line",
-                        "Spearmen Line",
-                        "Eagle Line"
-                    ],
-                    "bad": []
-                },
-                "Archery Range": {
-                    "good": [
-                        "Skirmisher Line",
-                        "Archer Line",
-                        "Cavalry Archer Line",
-                        "Hand Cannoneer"
-                    ],
-                    "bad": []
-                },
-                "Castle": {
-                    "good": [
-                        "Petard",
-                        "Trebuchet"
-                    ],
-                    "bad": []
-                },
-                "Monastary": {
-                    "good": [
-                        "Monk"
-                    ],
-                    "bad": []
-                },
-                "Stable": {
-                    "good": [
-                        "Scout Cavalry Line",
-                        "Knight Line",
-                        "Camel Line",
-                        "Battle Elephant"
-                    ],
-                    "bad": []
-                },
-                "Siege Workshop": {
-                    "good": [
-                        "Scorpions Line",
-                        "Mangonel Line",
-                        "Bombard Cannon",
-                        "Battering Ram Line",
-                        "Siege Tower"
-                    ],
-                    "bad": []
-                },
-                "Dock": {
-                    "good": [
-                        "Galley Line",
-                        "Cannon Galleon Line",
-                        "Demo Raft Line",
-                        "Fire Line"
-                    ],
-                    "bad": []
-                }
-            }
-        },
-        {
-            "name": "Goths",
-            "type": "building",
-            "link": "",
-            "img": "assets/icons/civ/goths.png",
-            "children": [
-                {
-                    "name": "",
-                    "description": "",
-                    "link": "",
-                    "img": ""
-                }
-            ],
-            "units": {
-                "Barracks": {
-                    "good": [
-                        "Militia Line",
-                        "Spearmen Line",
-                        "Eagle Line"
-                    ],
-                    "bad": []
-                },
-                "Archery Range": {
-                    "good": [
-                        "Skirmisher Line",
-                        "Archer Line",
-                        "Cavalry Archer Line",
-                        "Hand Cannoneer"
-                    ],
-                    "bad": []
-                },
-                "Castle": {
-                    "good": [
-                        "Petard",
-                        "Trebuchet"
-                    ],
-                    "bad": []
-                },
-                "Monastary": {
-                    "good": [
-                        "Monk"
-                    ],
-                    "bad": []
-                },
-                "Stable": {
-                    "good": [
-                        "Scout Cavalry Line",
-                        "Knight Line",
-                        "Camel Line",
-                        "Battle Elephant"
-                    ],
-                    "bad": []
-                },
-                "Siege Workshop": {
-                    "good": [
-                        "Scorpions Line",
-                        "Mangonel Line",
-                        "Bombard Cannon",
-                        "Battering Ram Line",
-                        "Siege Tower"
-                    ],
-                    "bad": []
-                },
-                "Dock": {
-                    "good": [
-                        "Galley Line",
-                        "Cannon Galleon Line",
-                        "Demo Raft Line",
-                        "Fire Line"
-                    ],
-                    "bad": []
-                }
-            }
-        },
-        {
-            "name": "Huns",
-            "type": "building",
-            "link": "",
-            "img": "assets/icons/civ/huns.png",
-            "children": [
-                {
-                    "name": "",
-                    "description": "",
-                    "link": "",
-                    "img": ""
-                }
-            ],
-            "units": {
-                "Barracks": {
-                    "good": [
-                        "Militia Line",
-                        "Spearmen Line",
-                        "Eagle Line"
-                    ],
-                    "bad": []
-                },
-                "Archery Range": {
-                    "good": [
-                        "Skirmisher Line",
-                        "Archer Line",
-                        "Cavalry Archer Line",
-                        "Hand Cannoneer"
-                    ],
-                    "bad": []
-                },
-                "Castle": {
-                    "good": [
-                        "Petard",
-                        "Trebuchet"
-                    ],
-                    "bad": []
-                },
-                "Monastary": {
-                    "good": [
-                        "Monk"
-                    ],
-                    "bad": []
-                },
-                "Stable": {
-                    "good": [
-                        "Scout Cavalry Line",
-                        "Knight Line",
-                        "Camel Line",
-                        "Battle Elephant"
-                    ],
-                    "bad": []
-                },
-                "Siege Workshop": {
-                    "good": [
-                        "Scorpions Line",
-                        "Mangonel Line",
-                        "Bombard Cannon",
-                        "Battering Ram Line",
-                        "Siege Tower"
-                    ],
-                    "bad": []
-                },
-                "Dock": {
-                    "good": [
-                        "Galley Line",
-                        "Cannon Galleon Line",
-                        "Demo Raft Line",
-                        "Fire Line"
-                    ],
-                    "bad": []
-                }
-            }
-        },
-        {
-            "name": "Incas",
-            "type": "building",
-            "link": "",
-            "img": "assets/icons/civ/incas.png",
-            "children": [
-                {
-                    "name": "",
-                    "description": "",
-                    "link": "",
-                    "img": ""
-                }
-            ],
-            "units": {
-                "Barracks": {
-                    "good": [
-                        "Militia Line",
-                        "Spearmen Line",
-                        "Eagle Line"
-                    ],
-                    "bad": []
-                },
-                "Archery Range": {
-                    "good": [
-                        "Skirmisher Line",
-                        "Archer Line",
-                        "Cavalry Archer Line",
-                        "Hand Cannoneer"
-                    ],
-                    "bad": []
-                },
-                "Castle": {
-                    "good": [
-                        "Petard",
-                        "Trebuchet"
-                    ],
-                    "bad": []
-                },
-                "Monastary": {
-                    "good": [
-                        "Monk"
-                    ],
-                    "bad": []
-                },
-                "Stable": {
-                    "good": [
-                        "Scout Cavalry Line",
-                        "Knight Line",
-                        "Camel Line",
-                        "Battle Elephant"
+                        "Battle Elephant Line"
                     ],
                     "bad": []
                 },
@@ -1243,7 +1249,7 @@
             "type": "building",
             "link": "",
             "img": "assets/icons/civ/indians.png",
-            "children": [
+            "unique": [
                 {
                     "name": "",
                     "description": "",
@@ -1287,7 +1293,7 @@
                         "Scout Cavalry Line",
                         "Knight Line",
                         "Camel Line",
-                        "Battle Elephant"
+                        "Battle Elephant Line"
                     ],
                     "bad": []
                 },
@@ -1317,7 +1323,7 @@
             "type": "building",
             "link": "",
             "img": "assets/icons/civ/italians.png",
-            "children": [
+            "unique": [
                 {
                     "name": "",
                     "description": "",
@@ -1361,7 +1367,7 @@
                         "Scout Cavalry Line",
                         "Knight Line",
                         "Camel Line",
-                        "Battle Elephant"
+                        "Battle Elephant Line"
                     ],
                     "bad": []
                 },
@@ -1391,7 +1397,7 @@
             "type": "building",
             "link": "",
             "img": "assets/icons/civ/japanese.png",
-            "children": [
+            "unique": [
                 {
                     "name": "",
                     "description": "",
@@ -1435,7 +1441,7 @@
                         "Scout Cavalry Line",
                         "Knight Line",
                         "Camel Line",
-                        "Battle Elephant"
+                        "Battle Elephant Line"
                     ],
                     "bad": []
                 },
@@ -1465,7 +1471,7 @@
             "type": "building",
             "link": "",
             "img": "assets/icons/civ/khmer.png",
-            "children": [
+            "unique": [
                 {
                     "name": "",
                     "description": "",
@@ -1509,7 +1515,7 @@
                         "Scout Cavalry Line",
                         "Knight Line",
                         "Camel Line",
-                        "Battle Elephant"
+                        "Battle Elephant Line"
                     ],
                     "bad": []
                 },
@@ -1539,7 +1545,7 @@
             "type": "building",
             "link": "",
             "img": "assets/icons/civ/koreans.png",
-            "children": [
+            "unique": [
                 {
                     "name": "",
                     "description": "",
@@ -1583,7 +1589,7 @@
                         "Scout Cavalry Line",
                         "Knight Line",
                         "Camel Line",
-                        "Battle Elephant"
+                        "Battle Elephant Line"
                     ],
                     "bad": []
                 },
@@ -1613,7 +1619,7 @@
             "type": "building",
             "link": "",
             "img": "assets/icons/civ/lithuanians.png",
-            "children": [
+            "unique": [
                 {
                     "name": "",
                     "description": "",
@@ -1657,7 +1663,7 @@
                         "Scout Cavalry Line",
                         "Knight Line",
                         "Camel Line",
-                        "Battle Elephant"
+                        "Battle Elephant Line"
                     ],
                     "bad": []
                 },
@@ -1687,7 +1693,7 @@
             "type": "building",
             "link": "",
             "img": "assets/icons/civ/magyars.png",
-            "children": [
+            "unique": [
                 {
                     "name": "",
                     "description": "",
@@ -1731,7 +1737,7 @@
                         "Scout Cavalry Line",
                         "Knight Line",
                         "Camel Line",
-                        "Battle Elephant"
+                        "Battle Elephant Line"
                     ],
                     "bad": []
                 },
@@ -1761,7 +1767,7 @@
             "type": "building",
             "link": "",
             "img": "assets/icons/civ/malay.png",
-            "children": [
+            "unique": [
                 {
                     "name": "",
                     "description": "",
@@ -1805,7 +1811,7 @@
                         "Scout Cavalry Line",
                         "Knight Line",
                         "Camel Line",
-                        "Battle Elephant"
+                        "Battle Elephant Line"
                     ],
                     "bad": []
                 },
@@ -1835,7 +1841,7 @@
             "type": "building",
             "link": "",
             "img": "assets/icons/civ/malians.png",
-            "children": [
+            "unique": [
                 {
                     "name": "",
                     "description": "",
@@ -1879,7 +1885,7 @@
                         "Scout Cavalry Line",
                         "Knight Line",
                         "Camel Line",
-                        "Battle Elephant"
+                        "Battle Elephant Line"
                     ],
                     "bad": []
                 },
@@ -1909,7 +1915,7 @@
             "type": "building",
             "link": "",
             "img": "assets/icons/civ/mayans.png",
-            "children": [
+            "unique": [
                 {
                     "name": "",
                     "description": "",
@@ -1953,7 +1959,7 @@
                         "Scout Cavalry Line",
                         "Knight Line",
                         "Camel Line",
-                        "Battle Elephant"
+                        "Battle Elephant Line"
                     ],
                     "bad": []
                 },
@@ -1983,7 +1989,7 @@
             "type": "building",
             "link": "",
             "img": "assets/icons/civ/mongols.png",
-            "children": [
+            "unique": [
                 {
                     "name": "",
                     "description": "",
@@ -2027,7 +2033,7 @@
                         "Scout Cavalry Line",
                         "Knight Line",
                         "Camel Line",
-                        "Battle Elephant"
+                        "Battle Elephant Line"
                     ],
                     "bad": []
                 },
@@ -2057,7 +2063,7 @@
             "type": "building",
             "link": "",
             "img": "assets/icons/civ/persians.png",
-            "children": [
+            "unique": [
                 {
                     "name": "",
                     "description": "",
@@ -2101,7 +2107,7 @@
                         "Scout Cavalry Line",
                         "Knight Line",
                         "Camel Line",
-                        "Battle Elephant"
+                        "Battle Elephant Line"
                     ],
                     "bad": []
                 },
@@ -2131,7 +2137,7 @@
             "type": "building",
             "link": "",
             "img": "assets/icons/civ/portuguese.png",
-            "children": [
+            "unique": [
                 {
                     "name": "",
                     "description": "",
@@ -2175,7 +2181,7 @@
                         "Scout Cavalry Line",
                         "Knight Line",
                         "Camel Line",
-                        "Battle Elephant"
+                        "Battle Elephant Line"
                     ],
                     "bad": []
                 },
@@ -2205,7 +2211,7 @@
             "type": "building",
             "link": "",
             "img": "assets/icons/civ/saracens.png",
-            "children": [
+            "unique": [
                 {
                     "name": "",
                     "description": "",
@@ -2249,7 +2255,7 @@
                         "Scout Cavalry Line",
                         "Knight Line",
                         "Camel Line",
-                        "Battle Elephant"
+                        "Battle Elephant Line"
                     ],
                     "bad": []
                 },
@@ -2279,7 +2285,7 @@
             "type": "building",
             "link": "",
             "img": "assets/icons/civ/slavs.png",
-            "children": [
+            "unique": [
                 {
                     "name": "",
                     "description": "",
@@ -2323,7 +2329,7 @@
                         "Scout Cavalry Line",
                         "Knight Line",
                         "Camel Line",
-                        "Battle Elephant"
+                        "Battle Elephant Line"
                     ],
                     "bad": []
                 },
@@ -2353,7 +2359,7 @@
             "type": "building",
             "link": "",
             "img": "assets/icons/civ/spanish.png",
-            "children": [
+            "unique": [
                 {
                     "name": "",
                     "description": "",
@@ -2397,7 +2403,7 @@
                         "Scout Cavalry Line",
                         "Knight Line",
                         "Camel Line",
-                        "Battle Elephant"
+                        "Battle Elephant Line"
                     ],
                     "bad": []
                 },
@@ -2427,7 +2433,7 @@
             "type": "building",
             "link": "",
             "img": "assets/icons/civ/tatars.png",
-            "children": [
+            "unique": [
                 {
                     "name": "",
                     "description": "",
@@ -2471,7 +2477,7 @@
                         "Scout Cavalry Line",
                         "Knight Line",
                         "Camel Line",
-                        "Battle Elephant"
+                        "Battle Elephant Line"
                     ],
                     "bad": []
                 },
@@ -2501,7 +2507,7 @@
             "type": "building",
             "link": "",
             "img": "assets/icons/civ/teutons.png",
-            "children": [
+            "unique": [
                 {
                     "name": "",
                     "description": "",
@@ -2545,7 +2551,7 @@
                         "Scout Cavalry Line",
                         "Knight Line",
                         "Camel Line",
-                        "Battle Elephant"
+                        "Battle Elephant Line"
                     ],
                     "bad": []
                 },
@@ -2575,7 +2581,7 @@
             "type": "building",
             "link": "",
             "img": "assets/icons/civ/turks.png",
-            "children": [
+            "unique": [
                 {
                     "name": "",
                     "description": "",
@@ -2619,7 +2625,7 @@
                         "Scout Cavalry Line",
                         "Knight Line",
                         "Camel Line",
-                        "Battle Elephant"
+                        "Battle Elephant Line"
                     ],
                     "bad": []
                 },
@@ -2649,7 +2655,7 @@
             "type": "building",
             "link": "",
             "img": "assets/icons/civ/vietnamese.png",
-            "children": [
+            "unique": [
                 {
                     "name": "",
                     "description": "",
@@ -2693,7 +2699,7 @@
                         "Scout Cavalry Line",
                         "Knight Line",
                         "Camel Line",
-                        "Battle Elephant"
+                        "Battle Elephant Line"
                     ],
                     "bad": []
                 },
@@ -2723,7 +2729,7 @@
             "type": "building",
             "link": "",
             "img": "assets/icons/civ/vikings.png",
-            "children": [
+            "unique": [
                 {
                     "name": "",
                     "description": "",
@@ -2767,7 +2773,7 @@
                         "Scout Cavalry Line",
                         "Knight Line",
                         "Camel Line",
-                        "Battle Elephant"
+                        "Battle Elephant Line"
                     ],
                     "bad": []
                 },
@@ -2797,7 +2803,7 @@
         "Militia Line": [
             "Archer Line",
             "Hand Cannoneer",
-            "Battle Elephant",
+            "Battle Elephant Line",
             "Scorpions Line"
         ],
         "Spearmen Line": [
@@ -2811,7 +2817,7 @@
         "Eagle Line": [
             "Militia Line",
             "Hand Cannoneer",
-            "Battle Elephant"
+            "Battle Elephant Line"
         ],
         "Archer Line": [
             "Skirmisher Line",
@@ -2828,7 +2834,7 @@
             "Scout Cavalry Line",
             "Knight Line",
             "Camel Line",
-            "Battle Elephant",
+            "Battle Elephant Line",
             "Scorpions Line",
             "Mangonel Line"
         ],
@@ -2864,7 +2870,7 @@
             "Archer Line",
             "Spearmen Line"
         ],
-        "Battle Elephant": [
+        "Battle Elephant Line": [
             "Spearmen Line",
             "Camel Line",
             "Cavalry Archer Line",
