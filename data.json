@@ -2885,6 +2885,7 @@
         "Archer Line": [
             "Skirmisher Line",
             "Scout Cavalry Line",
+            "Steppe Lancer Line",
             "Scorpions Line",
             "Mangonel Line",
             "Eagle Line",
@@ -2898,6 +2899,7 @@
             "Knight Line",
             "Camel Line",
             "Battle Elephant Line",
+            "Steppe Lancer Line",
             "Scorpions Line",
             "Mangonel Line"
         ],
@@ -2920,7 +2922,8 @@
             "Spearmen Line",
             "Camel Line",
             "Knight Line",
-            "Eagle Line"
+            "Eagle Line",
+            "Steppe Lancer Line"
         ],
         "Knight Line": [
             "Spearmen Line",
@@ -2940,6 +2943,13 @@
             "Monk",
             "Scorpions Line"
         ],
+        "Steppe Lancer Line": [
+            "Spearmen Line",
+            "Militia Line",
+            "Knight Line",
+            "Camel Line",
+            "Battle Elephant Line"
+        ],
         "Battering Ram Line": [
             "Spearmen Line",
             "Militia Line",
@@ -2947,12 +2957,14 @@
             "Scout Cavalry Line",
             "Knight Line",
             "Camel Line",
+            "Steppe Lancer Line",
             "Petard",
             "Mangonel Line"
         ],
         "Mangonel Line": [
             "Knight Line",
             "Camel Line",
+            "Steppe Lancer Line",
             "Petard",
             "Bombard Cannon",
             "Eagle Line"
@@ -2961,6 +2973,7 @@
             "Scout Cavalry Line",
             "Knight Line",
             "Camel Line",
+            "Steppe Lancer Line",
             "Bombard Cannon",
             "Eagle Line",
             "Mangonel Line"
@@ -2972,6 +2985,7 @@
             "Scout Cavalry Line",
             "Knight Line",
             "Camel Line",
+            "Steppe Lancer Line",
             "Petard"
         ],
         "Siege Tower": [
@@ -2981,6 +2995,7 @@
             "Scout Cavalry Line",
             "Knight Line",
             "Camel Line",
+            "Steppe Lancer Line",
             "Petard"
         ],
         "Monk": [
